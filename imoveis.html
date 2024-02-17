@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imóveis</title>
-    <link rel="stylesheet" href="imob.css">
+    <title>Imóveis Disponíveis</title>
     <style>
         /* Estilos para layout aprimorado */
         body {
@@ -30,6 +29,8 @@
             color: #333;
             font-size: 24px;
             margin-bottom: 10px;
+            border-bottom: 2px solid #007bff; /* Adicionando uma borda inferior */
+            padding-bottom: 5px; /* Adicionando um espaçamento abaixo do título */
         }
         .property img {
             display: block;
@@ -42,6 +43,7 @@
             color: #666;
             font-size: 16px;
             margin-bottom: 5px;
+            line-height: 1.5; /* Aumentando o espaçamento entre linhas */
         }
         .property a {
             color: #007bff;
@@ -54,6 +56,24 @@
         /* Estilo para centralizar o texto */
         .centered-text {
             text-align: center;
+            margin-top: 20px; /* Adicionando margem acima do texto centralizado */
+            color: #555; /* Alterando a cor do texto */
+        }
+        /* Estilo para os links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para os links na seção de navegação */
+        .navigation-links {
+            text-align: center;
+            margin-top: 30px; /* Adicionando margem acima dos links */
+        }
+        .navigation-links a {
+            margin: 0 10px; /* Adicionando espaçamento entre os links */
         }
     </style>
 </head>
@@ -79,14 +99,18 @@
         <img src="caminho_para_a_imagem_3.jpg" alt="Imóvel 3">
         <p>Endereço: Praça Modelo, 789</p>
         <p>Valor: R$ 700.000,00</p>
-        
     </div>
-    <div>
-        <p><a href="contato.html">Próxima Página</a></p>
-        <p><a href="imoveis2.html">Página Anterior</a></p>
-        <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.</p>
+
+    <!-- Seção de navegação -->
+    <div class="navigation-links">
+        <a href="contato.html">Próxima Página</a>
+        <a href="imoveis2.html">Página Anterior</a>
     </div>
+
+    <!-- Texto centralizado -->
+    <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.</p>
 </body>
 </html>
+
 
 
