@@ -45,12 +45,27 @@
         a {
             color: #007bff;
             text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #007bff;
+            transition: background-color 0.3s ease;
         }
         a:hover {
-            text-decoration: underline;
+            background-color: #0056b3;
         }
         .centered-text {
             text-align: center;
+        }
+        /* Estilo para o container dos links */
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Estilo para os links */
+        .link-container a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -70,7 +85,8 @@
         </ul>
         <p><strong>Nossa Equipe:</strong> Temos uma equipe altamente qualificada e dedicada...</p>
     </div>
-    <div>
+    <!-- Container para os links -->
+    <div class="link-container">
         <a href="index.html">Próxima Página</a>
         <a href="contato.html">Página Anterior</a>
     </div>
@@ -79,4 +95,5 @@
     <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.</p>
 </body>
 </html>
+
        
