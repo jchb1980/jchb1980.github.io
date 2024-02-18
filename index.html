@@ -96,23 +96,37 @@
         .carousel img {
             width: 100%; /* Imagens ocupam 100% da largura do carrossel */
         }
+
+        /* Estilos para os links */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #333;
+        }
     </style>
 </head>
 <body>
     <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5521965202500" target="_blank">
         <i class="fab fa-whatsapp"></i>
-        
     </a>
 
     <header>
         <h1>Site de Vendas de Imóveis</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="imoveis2.html">Imóveis Novos</a></li>
-                <li><a href="imoveis.html">Imóveis Usados</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="index.html" class="button-link">Início</a></li>
+                <li><a href="imoveis2.html" class="button-link">Imóveis Novos</a></li>
+                <li><a href="imoveis.html" class="button-link">Imóveis Usados</a></li>
+                <li><a href="contato.html" class="button-link">Contato</a></li>
+                <li><a href="sobrenos.html" class="button-link">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
@@ -129,22 +143,19 @@
 
         <!-- Links para navegação -->
         <div class="link-container">
-        <p><a href="imoveis2.html">Próxima Página</a></p>
-        <p><a href="sobrenos.html">Página Anterior</a></p>
+            <a href="imoveis2.html" class="button-link">Próxima Página</a>
+            <a href="sobrenos.html" class="button-link">Página Anterior</a>
         </div>
 
         <!-- Adicionando o link para abrir um site no navegador -->
         <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.</p>
-    
     </main>
 
     <footer>
         <nav>
             <ul>
-                <li><a href="https://www.facebook.com/imoveisemercadoimobiliario?mibextid=ZbWKwL">Facebook</a></li>
-                
-
-                <li><a href="https://www.instagram.com/juliobarbosabroker?igsh=MWFjdml1NG04d3ZubQ==">Instagram</a></li>
+                <li><a href="https://www.facebook.com/imoveisemercadoimobiliario?mibextid=ZbWKwL" class="button-link">Facebook</a></li>
+                <li><a href="https://www.instagram.com/juliobarbosabroker?igsh=MWFjdml1NG04d3ZubQ==" class="button-link">Instagram</a></li>
             </ul>
         </nav>
     </footer>
@@ -162,3 +173,4 @@
     </script>
 </body>
 </html>
+
