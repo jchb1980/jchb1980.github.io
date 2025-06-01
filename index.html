@@ -1,11 +1,11 @@
 <!DOCTYPE html> 
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corretor de Imóveis Julio Barbosa</title>
 
+    <!-- Estilos externos -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -21,17 +21,24 @@
         }
 
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
             color: #fff;
-            padding: 20px;
+            padding: 30px 20px 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
         }
 
         header h2 {
             font-size: 18px;
-            font-weight: normal;
-            margin-top: 5px;
-            color: #ccc;
+            font-weight: 500;
+            font-style: italic;
+            margin: 5px 0 15px;
+            color: #f0f0f0;
         }
 
         .container {
@@ -95,11 +102,8 @@
         }
 
         .carousel-container {
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin: 20px auto;
             width: 80%;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .carousel img {
@@ -123,7 +127,7 @@
         .centered-text {
             margin-top: 30px;
             font-style: italic;
-            font-size: 16px;
+            color: #555;
         }
     </style>
 </head>
@@ -136,7 +140,7 @@
 
     <header>
         <h1>Corretor de Imóveis Julio Barbosa</h1>
-        <h2>CRECI-RJ 102.807</h2>
+        <h2><strong>CRECI-RJ 102.807</strong></h2>
         <nav>
             <ul>
                 <li><a href="index.html" class="button-link">Início</a></li>
@@ -174,6 +178,7 @@
         </nav>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
