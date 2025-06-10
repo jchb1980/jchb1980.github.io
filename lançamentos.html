@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Imóveis Disponíveis</title>
     <style>
-        /* Estilos para layout aprimorado */
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
@@ -29,8 +29,14 @@
             color: #333;
             font-size: 24px;
             margin-bottom: 10px;
-            border-bottom: 2px solid #007bff; /* Adicionando uma borda inferior */
-            padding-bottom: 5px; /* Adicionando um espaçamento abaixo do título */
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
         }
         .property img {
             display: block;
@@ -40,108 +46,265 @@
             border-radius: 5px;
         }
         .property p {
-            color: #666;
+            color: #555;
             font-size: 16px;
             margin-bottom: 5px;
-            line-height: 1.5; /* Aumentando o espaçamento entre linhas */
+            line-height: 1.5;
         }
-        .property a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .property a:hover {
-            text-decoration: underline;
-        }
-        /* Estilo para centralizar o texto */
-        .centered-text {
-            text-align: center;
-            margin-top: 20px; /* Adicionando margem acima do texto centralizado */
-            color: #555; /* Alterando a cor do texto */
-        }
-        /* Estilo para os links */
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Estilo para os links na seção de navegação */
         .navigation-links {
             text-align: center;
-            margin-top: 30px; /* Adicionando margem acima dos links */
+            margin: 30px 0;
         }
         .navigation-links a {
-            margin: 0 10px; /* Adicionando espaçamento entre os links */
-            padding: 10px 20px; /* Adicionando padding para criar botões */
-            background-color: #000; /* Cor de fundo preta */
-            color: #fff; /* Cor do texto branca */
-            border-radius: 5px; /* Bordas arredondadas */
-            text-decoration: none; /* Removendo sublinhado */
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
         }
         .navigation-links a:hover {
-            background-color: #333; /* Mudando a cor de fundo ao passar o mouse */
+            background-color: #333;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .contact-section {
+            background-color: #fff;
+            padding: 30px;
+            max-width: 600px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-section input, .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-section button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-section button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
-<body>
-    <h1>Lançamentos</h1>
+<body id="topo">
+
+<h1>Avulsos</h1>
+
+<!-- IMÓVEIS 1 A 6 -->
 <div class="property">
+    <h2>Imóvel 1</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel1/foto1.png" alt="Imóvel 1 - Foto 1">
+        <img src="imagens/imagens/imovel1/foto2.png" alt="Imóvel 1 - Foto 2">
+        <img src="imagens/imagens/imovel1/foto3.png" alt="Imóvel 1 - Foto 3">
+        <img src="imagens/imagens/imovel1/foto4.png" alt="Imóvel 1 - Foto 4">
+    </div>
+    <p><strong>Valor:</strong> R$ 300.000,00</p>
+    <p>Terreno com 360m² (12x30), próximo à estação Jardim Primavera.</p>
+    <p><strong>Duas casas independentes:</strong></p>
+    <ul>
+        <li><strong>Casa 1:</strong> 3 quartos, sala ampla, cozinha, banheiro, varanda</li>
+        <li><strong>Casa 2:</strong> 2 quartos, sala, cozinha, banheiro, varanda</li>
+    </ul>
+    <p>Quintal amplo nos fundos com poço artesiano. Ideal para lazer, horta ou novas construções.</p>
+    <p>Ótima opção para morar, investir ou gerar renda com aluguel.</p>
+</div>
+
+<div class="property">
+    <h2>Imóvel 2</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel2/foto1.png" alt="Imóvel 2 - Foto 1">
+        <img src="imagens/imagens/imovel2/foto4.png" alt="Imóvel 2 - Foto 4">
+        <img src="imagens/imagens/imovel2/foto3.png" alt="Imóvel 2 - Foto 3">
+        <img src="imagens/imagens/imovel2/foto2.png" alt="Imóvel 2 - Foto 2">
+    </div>
+    <p><strong>Valor:</strong> R$ 370.000,00</p>
+    <p>Localização privilegiada em frente à Unigranrio. Composto por 2 kitnets + 1 casa com suíte. Ideal para estudantes ou investidores.</p>
+</div>
+
+<div class="property">
+    <h2>Imóvel 3</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel3/foto1.png" alt="Imóvel 3 - Foto 1">
+        <img src="imagens/imagens/imovel3/foto2.png" alt="Imóvel 3 - Foto 2">
+        <img src="imagens/imagens/imovel3/foto3.png" alt="Imóvel 3 - Foto 3">
+        <img src="imagens/imagens/imovel3/foto4.png" alt="Imóvel 3 - Foto 4">
+    </div>
+    <p><strong>Valor:</strong> R$ 250.000,00</p>
+    <p>Casa com 2 quartos, quintal, garagem. Bairro tranquilo e com infraestrutura completa.</p>
+</div>
+
+<div class="property">
+    <h2>Imóvel 4</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel4/foto1.png" alt="Imóvel 4 - Foto 1">
+        <img src="imagens/imagens/imovel4/foto2.png" alt="Imóvel 4 - Foto 2">
+        <img src="imagens/imagens/imovel4/foto3.png" alt="Imóvel 4 - Foto 3">
+        <img src="imagens/imagens/imovel4/foto4.png" alt="Imóvel 4 - Foto 4">
+    </div>
+    <p><strong>Valor:</strong> R$ 280.000,00</p>
+    <p>Apartamento com 3 quartos, suíte, vaga de garagem e varanda gourmet. Próximo ao centro.</p>
+</div>
+
+<div class="property">
+    <h2>Imóvel 5</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel5/foto1.png" alt="Imóvel 5 - Foto 1">
+        <img src="imagens/imagens/imovel5/foto2.png" alt="Imóvel 5 - Foto 2">
+        <img src="imagens/imagens/imovel5/foto3.png" alt="Imóvel 5 - Foto 3">
+        <img src="imagens/imagens/imovel5/foto4.png" alt="Imóvel 5 - Foto 4">
+    </div>
+    <p><strong>Valor:</strong> R$ 450.000,00</p>
+    <p>Sobrado com 4 quartos, escritório, garagem para 3 carros, área gourmet e churrasqueira.</p>
+</div>
+
+<div class="property">
+    <h2>Imóvel 6</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel6/foto1.png" alt="Imóvel 6 - Foto 1">
+        <img src="imagens/imagens/imovel6/foto2.png" alt="Imóvel 6 - Foto 2">
+        <img src="imagens/imagens/imovel6/foto3.png" alt="Imóvel 6 - Foto 3">
+        <img src="imagens/imagens/imovel6/foto4.png" alt="Imóvel 6 - Foto 4">
+    </div>
+    <p><strong>Valor:</strong> R$ 320.000,00</p>
+    <p>Casa térrea com 3 quartos, cozinha planejada, lavanderia coberta, próximo a escolas e comércio.</p>
+</div>
+
+<div class="property">
+    <h2>Imóvel 7</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel7/foto1.png" alt="Imóvel 7 - Foto 1">
+        <img src="imagens/imagens/imovel7/foto2.png" alt="Imóvel 7 - Foto 2">
+        <img src="imagens/imagens/imovel7/foto3.png" alt="Imóvel 7 - Foto 3">
+        <img src="imagens/imagens/imovel7/foto5.png" alt="Imóvel 7 - Foto 4">
+    </div>
+    <p><strong>Valor:</strong> R$ 530.000,00</p>
+    <p>Apartamento no Condomínio Amazonas – Duque de Caxias/RJ</p>
+    <p>Localizado no 4º andar, com sol da manhã, bem iluminado e arejado</p>
+    <p>2 quartos (sendo 1 suíte com ar-condicionado e armários planejados)</p>
+    <p>Sala ampla com cerâmica tipo tijolinho, teto rebaixado em gesso e piso em porcelanato</p>
+    <p>Varanda charmosa, ideal para momentos relaxantes</p>
+    <p>Cozinha espaçosa e ventilada, com área de serviço integrada</p>
+    <p>Banheiro social confortável e funcional</p>
+    <p>1 vaga de garagem</p>
+</div>
     
-    <div class="property">
-        <h2>Imóvel 1</h2>
-        <img src="https://raw.githubusercontent.com/jchb1980/jchb1980-github.io/main/img2.jpg" alt="Imóvel 2">
-        <p>Endereço: R. Matriz E Barros-Tijuca</p>
-        <p>Valor: R$1.062.000,00</p>
-    </div>
+ <div class="property">
+    <h2>Imóvel 8</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel8/foto1.png" alt="Imóvel 8 - Foto 1">
+        <img src="imagens/imagens/imovel8/foto2.png" alt="Imóvel 8 - Foto 2">
+        <img src="imagens/imagens/imovel8/foto3.png" alt="Imóvel 8 - Foto 3">
+        <img src="imagens/imagens/imovel8/foto5.png" alt="Imóvel 8 - Foto 4">
+     </div>
+     <p><strong>Valor:</strong> R$ 720.000,00</p>
+     <p>Três casas independentes no mesmo terreno à venda na Rua das Acácias – Jardim Primavera</p>
+     <p>Casa 1 – Térrea e Funcional,2 quartos, sala arejada, cozinha prática, banheiro social e varanda</p>
+     <p>Valor individual: R$ 250.000,00</p>
+     <p>Casa 2 – Aconchego e Simplicidade,1 quarto, sala, cozinha, banheiro e varanda</p>
+     <p>Valor individual: R$ 170.000,00</p>
+     <p>Casa 3 – Sofisticação no Segundo Andar,Suíte master com banheiro espaçoso, banheira de hidromassagem e espaço para closet</p>
+     <p>Valor individual: R$ 300.000,00</p>
+     
+</div>
 
-    <div class="property">
-        <h2>Imóvel 2</h2>
-        <img src="https://raw.githubusercontent.com/jchb1980/jchb1980-github.io/cf484c08d1e7fa7870365db7459382881cf0ce41/img3.jpg" alt="Imóvel 3">
-        <p>Endereço: R. Marquês De Valença , Nº 87-Tijuca</p>
-        <p>Valor: R$ 958.500,00</p>
-    </div>
+  <div class="property">
+    <h2>Imóvel 9</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel10/foto1.png" alt="Imóvel 9 - Foto 1">
+        <img src="imagens/imagens/imovel10/foto2.png" alt="Imóvel 9 - Foto 2">
+        <img src="imagens/imagens/imovel10/foto3.png" alt="Imóvel 9 - Foto 3">
+        <img src="imagens/imagens/imovel10/foto4.png" alt="Imóvel 9 - Foto 4">
+     </div>
+     <p><strong>Valor:</strong> R$ 950.000,00</p>
+     <p>Jardim Primavera Santa Cruz da Serra - Rua Leopoldo Miguez</p>
+     <p>Com um projeto pensado nos mínimos detalhes, ela oferece:</p>
+     <p>4 quartos confortáveis, sendo 1 suíte com sacada e uma vista inspiradora da área de lazer</p>
+     <p>Sala impressionante com 86m², perfeita para momentos inesquecíveis com a família</p>
+     <p>Cozinha ampla, com armários planejados, forno elétrico e despensa para quem ama cozinhar! o espaço ideal</p>
+     <p>Lavabo elegante, banheiro social no segundo pavimento e mais uma despensa</p>
+     <p>E quando você pisa na área externa... é amor à primeira vista:</p>
+     <p>Mas informações pelo whatsapp</p>
+      
+</div>
 
-    <div class="property">
-        <h2>Imóvel 3</h2>
-        <img src="https://raw.githubusercontent.com/jchb1980/jchb1980-github.io/main/img4.jpg">
-        <p>Endereço: R. Visconde De Itamarati, 80 - Tijuca</p>
-        <p>Valor: R$ 978.000,00</p>
-    </div>
+  <div class="property">
+    <h2>Imóvel 10</h2>
+    <div class="image-grid">
+        <img src="imagens/imagens/imovel11/foto1.png" alt="Imóvel 10 - Foto 1">
+        <img src="imagens/imagens/imovel11/foto2.png" alt="Imóvel 10 - Foto 2">
+        <img src="imagens/imagens/imovel11/foto3.png" alt="Imóvel 10 - Foto 3">
+        <img src="imagens/imagens/imovel11/foto4.png" alt="Imóvel 10 - Foto 4">
+     </div>
+     <p><strong>Valor:</strong> R$ 800.000,00</p>
+     <p>Linda casa de 2 qts na Vila Itamarati - Duque de Caxias</p>
+     <p> Casa linda com loja na frente - conforto, renda extra e ótima localização em Caxias!</p>
+     <p>Você está procurando mais do que uma casa?</p>
+     <p>Que tal um lar completo, com espaço, lazer.</p>
+     <p>E ainda a oportunidade de montar seu próprio negócio ou garantir uma renda extra?</p>
+     <p>Esse imóvel tem tudo isso e muito mais!</p> 
+     <p>Confira os detalhes que encantam:</p>
+     <p>2 quartos aconchegantes, prontos para acolher sua familia</p>
+     <p>Sala ampla com porta em blindex, perfeita para momentos especiais</p>
+     <p>Cozinha moderna com pia em granito e revestimento até o teto . </p>
+      
+ </div>
 
-    <div class="property">
-        <h2>Imóvel 4</h2>
-        <img src="https://raw.githubusercontent.com/jchb1980/jchb1980-github.io/df04ebde7860bc6132d90f099d9c62feecb68e97/img5.jpg" alt="Imóvel 1">
-        <p>Endereço: Park 101</p>
-        <p>Valor: R$ 3.010.000,00</p>
-    </div>
 
-     <div class="property">
-        <h2>Imóvel 5</h2>
-        <img src="https://raw.githubusercontent.com/jchb1980/jchb1980-github.io/main/img6.jpg" alt="Imóvel 1">
-        <p>Endereço: Av. Do Pepê , 360 - Barra Da Tijuca</p>
-        <p>Valor: R$ Ainda à lançar</p>
-    </div>
+     
+ 
+  
+<!-- Navegação -->
+<!-- Seção de navegação -->
+     <div class="navigation-links">
+         <a class="button" href="lançamentos.html">Voltar</a>
+         <a class="button" href="contato.html">Avançar</a>
+     </div>
 
-    <!-- Seção de navegação -->
-    <div class="navigation-links">
-        
-        <a href="index.html" style="background-color: black; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Voltar</a>
-        <a href="avulsos.html" style="background-color: black; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Avançar</a>
-    </div>
+<!-- Formulário de Contato -->
+<div class="contact-section" id="contato">
+    <h2>Entre em Contato</h2>
+    <form>
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
 
-    <!-- Texto centralizado -->
+<!-- Botão WhatsApp -->
+<a class="whatsapp-button" href="https://wa.me/5521999999999" target="_blank" title="Fale conosco no WhatsApp">
+    💬
+</a>
 
-     <p class="centered-text">Para maiores informações , entre em contato com o Corretor..</p>
-    <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.Filipenses 4:11–13</p>
-
-    
 </body>
 </html>
-
-
-
-
-
-
