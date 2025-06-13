@@ -1,15 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Vendas de Imóveis</title>
+
+    <!-- Slick Carousel CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-    <!-- Inclua o Font Awesome -->
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="imob.css">
+
     <style>
         body {
             margin: 0;
@@ -25,6 +29,15 @@
             padding: 14px;
             text-align: center;
         }
+
+        .titulo {
+            font-size: 20px; /* diminuída */
+        }
+
+        .subtitulo {
+            font-size: 16px; /* diminuída */
+        }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -61,15 +74,6 @@
             text-align: center;
         }
 
-        titulo {
-            font-size: 15px; /* diminua conforme necessário */
-}
-
-         subtitulo {
-         font-size: 15px;
-}
-        
-
         .whatsapp-link {
             position: fixed;
             width: 60px;
@@ -87,27 +91,25 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-decoration: none; /* Removendo sublinhado do link */
+            text-decoration: none;
         }
 
         .fab.fa-whatsapp {
-            margin-top: 5px; /* Ajuste de margem para alinhamento */
+            margin-top: 5px;
         }
 
-        /* Estilos adicionais para o carrossel */
         .carousel-container {
             margin-top: 20px;
             margin-bottom: 20px;
-            width: 80%; /* Defina a largura desejada */
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
         }
 
         .carousel img {
-            width: 100%; /* Imagens ocupam 100% da largura do carrossel */
+            width: 100%;
         }
 
-        /* Estilos para os links */
         .button-link {
             display: inline-block;
             padding: 5px 15px;
@@ -121,11 +123,20 @@
         .button-link:hover {
             background-color: #333;
         }
+
+        .link-container {
+            margin-top: 20px;
+        }
+
+        .centered-text {
+            margin-top: 30px;
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
     <a class="whatsapp-link" href="https://wa.me/5521965202500" target="_blank">
-        
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -135,7 +146,7 @@
         <h2><strong>CRECI-RJ 102.807</strong></h2>
         <nav>
             <ul>
-                <li><a href="index.html" class="button-link">Home</a></li>
+                <!-- HOME REMOVIDO DA NAV -->
                 <li><a href="lançamentos.html" class="button-link">Lançamentos</a></li>
                 <li><a href="avulsos.html" class="button-link">Avulsos</a></li>
                 <li><a href="contato.html" class="button-link">Contato</a></li>
@@ -145,7 +156,6 @@
     </header>
 
     <main>
-        <!-- Carrossel de imagens -->
         <div class="carousel-container">
             <div class="carousel">
                 <div><img src="https://img.freepik.com/fotos-gratis/modelo-de-casa-de-ferias-chave-e-desenho-em-area-de-trabalho-retro-conceito-de-venda-de-imoveis_1387-310.jpg" alt="Imagem 1"></div>
@@ -154,14 +164,11 @@
             </div>
         </div>
 
-        <!-- Links para navegação -->
         <div class="link-container">
-           
-            <a href="sobrenos.html" class="button-link">Voltar</a>
+            <a href="index.html" class="button-link">Voltar</a>
             <a href="lançamentos.html" class="button-link">Avançar</a>
         </div>
 
-        <!-- Adicionando o link para abrir um site no navegador -->
         <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.</p>
     </main>
 
@@ -174,24 +181,16 @@
         </nav>
     </footer>
 
-    <!-- Scripts JavaScript -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.carousel').slick({
-                autoplay: true, // Ativa a rotação automática
-                autoplaySpeed: 2000 // Define a velocidade em milissegundos (2 segundos neste exemplo)
+                autoplay: true,
+                autoplaySpeed: 2000
             });
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
