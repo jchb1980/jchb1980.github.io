@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imóveis Disponíveis</title>
     <style>
+        /* Estilos para layout aprimorado */
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
@@ -29,14 +29,8 @@
             color: #333;
             font-size: 24px;
             margin-bottom: 10px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff; /* Adicionando uma borda inferior */
+            padding-bottom: 5px; /* Adicionando um espaçamento abaixo do título */
         }
         .property img {
             display: block;
@@ -46,80 +40,93 @@
             border-radius: 5px;
         }
         .property p {
-            color: #555;
+            color: #666;
             font-size: 16px;
             margin-bottom: 5px;
-            line-height: 1.5;
+            line-height: 1.5; /* Aumentando o espaçamento entre linhas */
         }
+        .property a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .property a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para centralizar o texto */
+        .centered-text {
+            text-align: center;
+            margin-top: 20px; /* Adicionando margem acima do texto centralizado */
+            color: #555; /* Alterando a cor do texto */
+        }
+        /* Estilo para os links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para os links na seção de navegação */
         .navigation-links {
             text-align: center;
-            margin: 30px 0;
+            margin-top: 30px; /* Adicionando margem acima dos links */
         }
         .navigation-links a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
+            margin: 0 10px; /* Adicionando espaçamento entre os links */
+            padding: 10px 20px; /* Adicionando padding para criar botões */
+            background-color: #000; /* Cor de fundo preta */
+            color: #fff; /* Cor do texto branca */
+            border-radius: 5px; /* Bordas arredondadas */
+            text-decoration: none; /* Removendo sublinhado */
         }
         .navigation-links a:hover {
-            background-color: #333;
-        }
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            text-decoration: none;
-            z-index: 1000;
-        }
-        .contact-section {
-            background-color: #fff;
-            padding: 30px;
-            max-width: 600px;
-            margin: 40px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .contact-section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-section input, .contact-section textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .contact-section button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contact-section button:hover {
-            background-color: #0056b3;
+            background-color: #333; /* Mudando a cor de fundo ao passar o mouse */
         }
     </style>
 </head>
-<body id="topo">
+<body>
+    <h1>Imóveis Novos (Imóveis Não Edificados-Lançamentos)</h1>
 
-<h1>##</h1>
+    <div class="property">
+        <h2>Imóvel 1</h2>
+        <img src="caminho_para_a_imagem_1.jpg" alt="Imóvel 1">
+        <p>Endereço: Rua Exemplo, 123</p>
+        <p>Valor: R$ 300.000,00</p>
+    </div>
 
-<!-- IMÓVEIS 1 A 6 -->
+    <div class="property">
+        <h2>Imóvel 2</h2>
+        <img src="caminho_para_a_imagem_2.jpg" alt="Imóvel 2">
+        <p>Endereço: Avenida Teste, 456</p>
+        <p>Valor: R$ 500.000,00</p>
+    </div>
+
+    <div class="property">
+        <h2>Imóvel 3</h2>
+        <img src="caminho_para_a_imagem_3.jpg" alt="Imóvel 3">
+        <p>Endereço: Praça Modelo, 789</p>
+        <p>Valor: R$ 700.000,00</p>
+    </div>
+
+    <!-- Seção de navegação -->
+    <div class="navigation-links">
+       
+        <a href="index.html" style="background-color: black; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Página Anterior</a>
+        <a href="imoveis.html" style="background-color: black; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Próxima Página</a>
+    </div>
+
+    <!-- Texto centralizado -->
+    <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.</p>
+</body>
+</html>
+
+
+
+
+
+
+
 
 
 
