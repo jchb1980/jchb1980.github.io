@@ -730,12 +730,18 @@
 <!-- Formulário de Contato -->
 <div class="contact-section" id="contato">
     <h2>Entre em Contato</h2>
-    <form>
-        <input type="text" name="nome" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu e-mail" required />
-        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
+    <form action="https://formsubmit.co/julbarbosaimoveis@gmail.com" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required />
+    <input type="email" name="email" placeholder="Seu e-mail" required />
+    <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+
+    <!-- Proteções e configurações -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://seusite.com.br/obrigado.html">
     </form>
+        
+        
 </div>
 
 <!-- Botão WhatsApp -->
@@ -745,4 +751,5 @@
 
 </body>
 </html>
+
 
