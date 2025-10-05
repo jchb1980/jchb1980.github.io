@@ -12,33 +12,43 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             text-align: center;
-            color:#000000 ;
+            color: #000;
             margin-bottom: 20px;
         }
+
         .contact-info {
             margin-top: 20px;
+            line-height: 1.6;
         }
+
         .contact-info p {
             margin-bottom: 10px;
+            text-align: center;
         }
+
         /* Estilo para o logotipo */
         .logo {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .logo img {
-             max-width: 50%; /* Para garantir que o logotipo não ultrapasse a largura do contêiner */
+            max-width: 50%;
+            height: auto;
         }
+
         /* Estilo para os links */
         a.button {
             color: #fff;
@@ -49,61 +59,97 @@
             display: inline-block;
             transition: background-color 0.3s ease;
         }
+
         a.button:hover {
             background-color: #333;
         }
+
+        /* Estilo para o formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        /* Estilo para centralizar os links */
+        .navigation-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation-links a {
+            margin: 0 5px;
+        }
+
         /* Estilo para o texto centralizado */
         .centered-text {
             text-align: center;
             color: #555;
             margin-top: 20px;
-        }
-        /* Estilo para centralizar os links */
-        .navigation-links {
-            text-align: center; /* Centraliza os links horizontalmente */
-            margin-top: 20px;
-        }
-        .navigation-links a {
-            margin-right: 10px; /* Adiciona um espaço entre os links */
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">
-            <!-- Incluindo o logotipo -->
-            <img src="imagens/imagens/logo/logo1.png " alt="Logotipo da sua empresa">
+            <img src="imagens/imagens/logo/logo1.png" alt="Logotipo da sua empresa">
         </div>
+
         <h1>Contato do Corretor</h1>
+
         <div class="contact-info">
             <p><strong>Nome:</strong> Julio Barbosa</p>
             <p><strong>Email:</strong> imoveisdojb@gmail.com</p>
-            <p><strong>WhatsApp:</strong> &nbsp;<a class="button" href="https://wa.me/5521965202500">Clique aqui para enviar uma mensagem</a></p>
+            <p><strong>WhatsApp:</strong> 
+                <a class="button" href="https://wa.me/5521965202500">Clique aqui para enviar uma mensagem</a>
+            </p>
             <hr>
         </div>
-        
-        <!-- Seção de navegação -->
+
+        <div class="contact-section" id="contato">
+            <h2 style="text-align:center;">Entre em Contato</h2>
+            <form action="https://formsubmit.co/danieledecarvalhorodrigues@gmail.com" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required />
+                <input type="email" name="email" placeholder="Seu e-mail" required />
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://daniele917.github.io/imobiliaria/obrigado.html">
+            </form>
+        </div>
+
         <div class="navigation-links">
             <a class="button" href="index.html">Voltar</a>
             <a class="button" href="sobrenos.html">Avançar</a>
         </div>
 
-        <!-- Texto centralizado -->
-        <p class="centered-text">Tudo Posso Naquele Que Me Fortalece.Filipenses 4:11–13</p>
+        <p class="centered-text">Tudo posso naquele que me fortalece. Filipenses 4:11–13</p>
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
