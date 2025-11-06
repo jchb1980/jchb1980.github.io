@@ -1,4 +1,7 @@
-
+Gmail	Daniele de Carvalho Rodrigues <danieledecarvalhorodrigues@gmail.com>
+(sem assunto)
+Daniele de Carvalho Rodrigues <danieledecarvalhorodrigues46@gmail.com>	6 de novembro de 2025 às 19:27
+Para: danieledecarvalhorodrigues@gmail.com
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -145,34 +148,48 @@
             text-decoration: none;
         }
 
-        /* Estilos dos botões da galeria (Troca de Imóveis) */
+        
+
+/* Estilos dos botões da galeria (Troca de Imóveis) */
+        /* --- NOVO ESTILO: Botões de Navegação da Galeria de Imóveis (Texto e Preto) --- */
+        .navigation-imoveis {
+            display: flex; 
+            justify-content: center; 
+            width: 100%;
+            max-width: 650px; 
+            margin: 10px auto; 
+        }
+
         .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
-            z-index: 10;
-        }
-        .prev {
-            left: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+           cursor: pointer;
+           display: block; 
+           flex-grow: 1; 
+           text-align: center;
+    
+           position: relative; 
+           margin: 5px; 
+           padding: 10px 20px; 
+    
+           color: white;
+           font-weight: bold;
+           font-size: 16px; 
+           transition: 0.3s ease;
+           border-radius: 5px; 
+           user-select: none;
+    
+    /* COR PRETA */
+           background-color: #000; 
+    
+           border: none;
+           text-decoration: none; 
+           z-index: 10;
+       }
+
+       .prev:hover, .next:hover {
+           background-color: #333; 
+
+        
+
         }
         
         /* Outros estilos */
@@ -258,12 +275,15 @@
 
 <h1>Imóveis</h1>
 
+<div class="navigation-imoveis"> 
+    <a class="prev" onclick="plusSlides(-1)">Anterior</a>
+    <a class="next" onclick="plusSlides(1)">Próximo</a>
+</div>
+
 <div class="galeria">
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="property active">
+  <div class="property active">
+        
         <h2>Imóvel 1</h2>
         <div class="carousel-container">
             <div class="carousel-track" data-imovel="1">
@@ -461,7 +481,7 @@
         </ul>
     </div>
 
-    <div class="property">
+      <div class="property">
         <h2>Imóvel 11</h2>
         <div class="carousel-container">
             <div class="carousel-track" data-imovel="11">
@@ -822,7 +842,7 @@
         <p>Galpão 12x30, todo murado, com cobertura e portão de garagem.</p>
         <p>Atualmente funciona como estacionamento , excelente ponto comercial, ideal para qualquer atividade.</p>
     </div>
-
+    
     <div class="property">
         <h2>Imóvel 28</h2>
         <div class="carousel-container">
@@ -918,9 +938,9 @@
     <p>Dois quartos (1 suíte), sala, cozinha ampla e ventilada, varandão e 1 vaga de garagem.</p>
     <p>Conforto, localização e paisagens únicas!</p>
     <p><strong>Mais informações pelo whatsapp.</strong></p>
-    </div>
+</div>
 
-    <div class="property">
+<div class="property">
     <h2>Imóvel 33</h2>
     <div class="carousel-container">
         <div class="carousel-track" data-imovel="33">
@@ -1029,16 +1049,25 @@
 
 </div>
 
-    <div class="navigation-links">
+<div class="navigation-links">
     <a class="button" href="index.html">Voltar</a>
     <a class="button" href="contato.html">Avançar</a>
 </div>
 
-<a class="whatsapp-button" href="https://wa.me/5521965202500?text=Ol%C3%A1%20%E2%98%BA%2C%20vim%20atrav%C3%A9s%20do%20site%20imobili%C3%A1rio." target="_blank" title="Fale conosco no WhatsApp">
+<a class="whatsapp-button" href="https://wa.me/5521971406156?text=Ol%C3%A1%20%E2%98%BA%2C%20vim%20atrav%C3%A9s%20do%20site%20imobili%C3%A1rio." target="_blank" title="Fale conosco no WhatsApp">
     💬
 </a>
 
-
+<div class="contact-section">
+    <h2>Entre em Contato</h2>
+    <form action="processa_formulario.php" method="POST">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <input type="tel" name="telefone" placeholder="Seu Telefone/Whatsapp">
+        <textarea name="mensagem" placeholder="Mensagem (Ex: Tenho interesse no Imóvel X)" rows="4" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</div>
 
 <div id="zoom-modal" class="modal" onclick="fecharZoom(event)">
     <span class="close-button" onclick="fecharZoom(event)">&times;</span>
@@ -1137,13 +1166,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
