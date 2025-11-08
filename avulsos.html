@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Imóveis Disponíveis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <style>
         /* Estilos Globais */
         body {
@@ -143,51 +145,52 @@
             color: #bbb;
             text-decoration: none;
         }
-
         
+
+       
 
 /* Estilos dos botões da galeria (Troca de Imóveis) */
         /* --- NOVO ESTILO: Botões de Navegação da Galeria de Imóveis (Texto e Preto) --- */
         .navigation-imoveis {
-            display: flex; 
-            justify-content: center; 
+            display: flex;
+            justify-content: center;
             width: 100%;
-            max-width: 650px; 
-            margin: 10px auto; 
+            max-width: 650px;
+            margin: 10px auto;
         }
 
         .prev, .next {
            cursor: pointer;
-           display: block; 
-           flex-grow: 1; 
+           display: block;
+           flex-grow: 1;
            text-align: center;
-    
-           position: relative; 
-           margin: 5px; 
-           padding: 10px 20px; 
-    
+   
+           position: relative;
+           margin: 5px;
+           padding: 10px 20px;
+   
            color: white;
            font-weight: bold;
-           font-size: 16px; 
+           font-size: 16px;
            transition: 0.3s ease;
-           border-radius: 5px; 
+           border-radius: 5px;
            user-select: none;
-    
+   
     /* COR PRETA */
-           background-color: #000; 
-    
+           background-color: #000;
+   
            border: none;
-           text-decoration: none; 
+           text-decoration: none;
            z-index: 10;
        }
 
        .prev:hover, .next:hover {
-           background-color: #333; 
+           background-color: #333;
 
-        
+       
 
         }
-        
+       
         /* Outros estilos */
         .navigation-links {
             text-align: center;
@@ -265,13 +268,55 @@
         .contact-section button:hover {
             background-color: #0056b3;
         }
+        .property {
+            position: relative; 
+    /* Outros estilos de propriedade que você já tem */
+        }
+        .botao-compartilhar {
+            position: absolute;
+            top: 20px; /* Distância do topo do contêiner do imóvel */
+            right: 20px; /* Distância da lateral direita */
+            background: none;
+            border: none;
+            color: #e30000; /* Cor Vermelha/Laranja (ajuste a cor que preferir) */
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10; 
+            padding: 5px;
+        }
+        /* 1. O contêiner pai deve ser 'relative' */
+        .property {
+            position: relative; 
+    /* Altura definida é importante para o absolute funcionar. */
+    /* Se a altura já estiver definida por outros estilos, você pode omitir as linhas abaixo. */
+    /* Caso contrário, use: */
+    /* height: 100%; */
+    /* min-height: 300px; /* Exemplo de altura mínima */
+            overflow: hidden; /* Ajuda a conter o botão */
+        }
+        
+
+/* 2. O botão de compartilhamento deve ser 'absolute' */
+        .botao-compartilhar {
+            position: absolute;
+            top: 20px; 
+            right: 20px; 
+            background: none;
+            border: none;
+            color: #000000; /* Cor Vermelha/Laranja (ajuste se quiser outra cor) */
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10; /* Garante que fique por cima de fotos ou texto */
+            padding: 5px;
+        }
+        
     </style>
 </head>
 <body id="topo">
 
 <h1>Imóveis</h1>
 
-<div class="navigation-imoveis"> 
+<div class="navigation-imoveis">
     <a class="prev" onclick="plusSlides(-1)">Anterior</a>
     <a class="next" onclick="plusSlides(1)">Próximo</a>
 </div>
@@ -279,7 +324,9 @@
 <div class="galeria">
 
   <div class="property active">
-        
+        <button class="botao-compartilhar" title="Compartilhar este imóvel">
+        <i class="fas fa-share-alt"></i>
+        </button>
         <h2>Imóvel 1</h2>
         <div class="carousel-container">
             <div class="carousel-track" data-imovel="1">
@@ -303,8 +350,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 2</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 2</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="2">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel2/foto1.png" alt="Imóvel 2 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel2/foto4.png" alt="Imóvel 2 - Foto 4" onclick="abrirZoom(this)"></div>
@@ -320,8 +370,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 3</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 3</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="3">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel3/foto1.png" alt="Imóvel 3 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel3/foto2.png" alt="Imóvel 3 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -337,8 +390,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 4</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 4</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="4">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel4/foto1.png" alt="Imóvel 4 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel4/foto2.png" alt="Imóvel 4 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -354,8 +410,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 5</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 5</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="5">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel5/foto1.png" alt="Imóvel 5 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel5/foto2.png" alt="Imóvel 5 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -370,8 +429,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 6</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 6</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="6">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel6/foto1.png" alt="Imóvel 6 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel6/foto2.png" alt="Imóvel 6 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -387,8 +449,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 7</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 7</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="7">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel7/foto1.png" alt="Imóvel 7 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel7/foto2.png" alt="Imóvel 7 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -410,8 +475,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 8</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 8</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="8">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel8/foto1.png" alt="Imóvel 8 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel8/foto2.png" alt="Imóvel 8 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -432,8 +500,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 9</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 9</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="9">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel9/foto1.png" alt="Imóvel 9 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel9/foto2.png" alt="Imóvel 9 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -452,6 +523,9 @@
     </div>
 
     <div class="property">
+        <button class="botao-compartilhar" title="Compartilhar este imóvel">
+        <i class="fas fa-share-alt"></i>
+        </button>
         <h2>Imóvel 10</h2>
         <div class="carousel-container">
             <div class="carousel-track" data-imovel="10">
@@ -477,9 +551,12 @@
         </ul>
     </div>
 
-      <div class="property">
-        <h2>Imóvel 11</h2>
-        <div class="carousel-container">
+    <div class="property">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 11</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="11">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel11/foto1.png" alt="Imóvel 11 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel11/foto2.png" alt="Imóvel 11 - Foto 2" onclick="abrirZoom(this)"></div>
@@ -500,8 +577,11 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 12</h2>
-        <div class="carousel-container">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 12</h2>
+         <div class="carousel-container">
             <div class="carousel-track" data-imovel="12">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel12/foto1.png" alt="Imóvel 12 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel12/foto2.png" alt="Imóvel 12 - Foto 4" onclick="abrirZoom(this)"></div>
@@ -517,12 +597,15 @@
         <p>Nos fundos, o lazer é completo: piscina, churrasqueira com bancada de apoio, sauna a vapor com chuveiro, além de banheiro e chuveiro externo para maior comodidade.</p>
         <p>No segundo pavimento, a casa oferece duas suítes confortáveis, sendo uma suíte master com closets espaçosos,  banheiro de corredor e um mezanino encantador, ideal como sala íntima ou escritório.</p>
         <p>O terceiro pavimento garante ainda mais privacidade, com dois quartos (um com closet), banheiro completo e uma sala íntima acolhedora, perfeita para relaxar, meditar ou criar um espaço de leitura.</p>
-    </div>
+     </div>
 
     <div class="property">
-        <h2>Imóvel 13</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="13">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 13</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="13">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel13/foto1.png" alt="Imóvel 13 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel13/foto2.png" alt="Imóvel 13 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel13/foto3.png" alt="Imóvel 13 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -547,9 +630,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 14</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="14">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 14</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="14">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel14/foto1.png" alt="Imóvel 14 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel14/foto2.png" alt="Imóvel 14 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel14/foto3.png" alt="Imóvel 14 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -567,9 +653,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 15</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="15">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 15</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="15">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel15/foto1.png" alt="Imóvel 15 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel15/foto2.png" alt="Imóvel 15 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel15/foto3.png" alt="Imóvel 15 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -587,9 +676,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 16</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="16">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 16</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="16">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto1.png" alt="Imóvel 16 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto2.png" alt="Imóvel 16 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto3.png" alt="Imóvel 16 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -607,9 +699,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 17</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="17">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 17</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="17">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel17/foto1.png" alt="Imóvel 17 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel17/foto2.png" alt="Imóvel 17 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel17/foto3.png" alt="Imóvel 17 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -626,9 +721,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 18</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="18">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 18</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="18">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel18/foto4.png" alt="Imóvel 18 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel18/foto3.png" alt="Imóvel 18 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel18/foto2.png" alt="Imóvel 18 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -646,9 +744,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 19</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="19">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 19</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="19">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto1.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto2.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto3.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></div>
@@ -672,9 +773,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 20</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="20">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 20</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="20">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto4.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto2.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto3.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></div>
@@ -696,9 +800,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 21</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="21">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 21</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="21">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto1.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto2.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto3.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></div>
@@ -721,9 +828,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 22</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="22">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 22</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="22">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto1.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto2.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto3.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></div>
@@ -744,9 +854,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 23</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="23">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 23</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="23">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel23/foto1.png" alt="Imóvel 23 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel23/foto2.png" alt="Imóvel 23 - Foto 4" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel23/foto3.png" alt="Imóvel 23 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -763,9 +876,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 24</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="24">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 24</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="24">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel24/foto1.png" alt="Imóvel 24 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel24/foto2.png" alt="Imóvel 24 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel24/foto3.png" alt="Imóvel 24 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -783,9 +899,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 25</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="25">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 25</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="25">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel25/foto1.jpg" alt="Imóvel 25 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel25/foto2.jpg" alt="Imóvel 25 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel25/foto3.jpg" alt="Imóvel 25 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -802,9 +921,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 26</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="26">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 26</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="26">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel26/foto4.jpg" alt="Imóvel 26 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel26/foto3.jpg" alt="Imóvel 26 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel26/foto2.jpg" alt="Imóvel 26 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -822,9 +944,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 27</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="27">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 27</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="27">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel27/foto1.jpg" alt="Imóvel 27 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel27/foto2.jpg" alt="Imóvel 27 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel27/foto3.jpg" alt="Imóvel 27 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -838,11 +963,14 @@
         <p>Galpão 12x30, todo murado, com cobertura e portão de garagem.</p>
         <p>Atualmente funciona como estacionamento , excelente ponto comercial, ideal para qualquer atividade.</p>
     </div>
-    
+   
     <div class="property">
-        <h2>Imóvel 28</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="28">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 28</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="28">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel28/foto1.jpg" alt="Imóvel 28 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel28/foto2.jpg" alt="Imóvel 28 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel28/foto3.jpg" alt="Imóvel 28 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -859,9 +987,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 29</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="29">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 29</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="29">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel29/foto1.jpg" alt="Imóvel 29 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel29/foto2.jpg" alt="Imóvel 29 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel29/foto3.jpg" alt="Imóvel 29 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -878,9 +1009,12 @@
     </div>
 
     <div class="property">
-        <h2>Imóvel 30</h2>
-        <div class="carousel-container">
-            <div class="carousel-track" data-imovel="30">
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 30</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="30">
                 <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto1.jpg" alt="Imóvel 30 - Foto 1" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto2.jpg" alt="Imóvel 30 - Foto 2" onclick="abrirZoom(this)"></div>
                 <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto3.jpg" alt="Imóvel 30 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -898,48 +1032,57 @@
     </div>
 
     <div class="property">
-    <h2>Imóvel 31</h2>
-    <div class="carousel-container">
-        <div class="carousel-track" data-imovel="31">
-            <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto1.jpg" alt="Imóvel 31 - Foto 1" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto2.jpg" alt="Imóvel 31 - Foto 2" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto3.jpg" alt="Imóvel 31 - Foto 3" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto4.jpg" alt="Imóvel 31 - Foto 4" onclick="abrirZoom(this)"></div>
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 31</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="31">
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto1.jpg" alt="Imóvel 31 - Foto 1" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto2.jpg" alt="Imóvel 31 - Foto 2" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto3.jpg" alt="Imóvel 31 - Foto 3" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto4.jpg" alt="Imóvel 31 - Foto 4" onclick="abrirZoom(this)"></div>
+            </div>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 31)">&#10094;</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 31)">&#10095;</button>
         </div>
-        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 31)">&#10094;</button>
-        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 31)">&#10095;</button>
-    </div>
-    <p><strong>Valor:</strong>R$ 700.000,00</p>
-    <p>Localizada na Rua General Dionísio, a poucos passos da Praça Humaitá e da Brigadeiro Lima e Silva.</p>
-    <p>Casa com 3 quartos, sala, cozinha e banheiro amplos, dependência completa e quintal gigante.</p>
-    <p>Acessibilidade total para todas as regiões de Duque de Caxias.</p>
-    <p><strong>Mais informações pelo whatsapp.</strong></p>
+        <p><strong>Valor:</strong>R$ 700.000,00</p>
+        <p>Localizada na Rua General Dionísio, a poucos passos da Praça Humaitá e da Brigadeiro Lima e Silva.</p>
+        <p>Casa com 3 quartos, sala, cozinha e banheiro amplos, dependência completa e quintal gigante.</p>
+        <p>Acessibilidade total para todas as regiões de Duque de Caxias.</p>
+        <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
     <div class="property">
-    <h2>Imóvel 32</h2>
-    <div class="carousel-container">
-        <div class="carousel-track" data-imovel="32">
-            <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto1.jpg" alt="Imóvel 32 - Foto 1" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto2.jpg" alt="Imóvel 32 - Foto 2" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto3.jpg" alt="Imóvel 32 - Foto 3" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto4.jpg" alt="Imóvel 32 - Foto 4" onclick="abrirZoom(this)"></div>
-        </div>
-        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 32)">&#10094;</button>
-        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 32)">&#10095;</button>
+         <button class="botao-compartilhar" title="Compartilhar este imóvel">
+         <i class="fas fa-share-alt"></i>
+         </button>
+         <h2>Imóvel 32</h2>
+         <div class="carousel-container">
+             <div class="carousel-track" data-imovel="32">
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto1.jpg" alt="Imóvel 32 - Foto 1" onclick="abrirZoom(this)"></div>
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto2.jpg" alt="Imóvel 32 - Foto 2" onclick="abrirZoom(this)"></div>
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto3.jpg" alt="Imóvel 32 - Foto 3" onclick="abrirZoom(this)"></div>
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto4.jpg" alt="Imóvel 32 - Foto 4" onclick="abrirZoom(this)"></div>
+         </div>
+         <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 32)">&#10094;</button>
+         <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 32)">&#10095;</button>
     </div>
-    <p><strong>Valor:</strong> VENDIDO </p>
-    <p>Condomínio Amazonas, Rua Sebastião de Carvalho.</p>
-    <p>Apartamento no 13º andar com vista livre para o Galeão, Igreja da Penha e Hospital Caxias D’Or. </p>
-    <p>Dois quartos (1 suíte), sala, cozinha ampla e ventilada, varandão e 1 vaga de garagem.</p>
-    <p>Conforto, localização e paisagens únicas!</p>
-    <p><strong>Mais informações pelo whatsapp.</strong></p>
+        <p><strong>Valor:</strong> VENDIDO </p>
+        <p>Condomínio Amazonas, Rua Sebastião de Carvalho.</p>
+        <p>Apartamento no 13º andar com vista livre para o Galeão, Igreja da Penha e Hospital Caxias D’Or. </p>
+        <p>Dois quartos (1 suíte), sala, cozinha ampla e ventilada, varandão e 1 vaga de garagem.</p>
+        <p>Conforto, localização e paisagens únicas!</p>
+        <p><strong>Mais informações pelo whatsapp.</strong></p>
 </div>
 
 <div class="property">
-    <h2>Imóvel 33</h2>
-    <div class="carousel-container">
-        <div class="carousel-track" data-imovel="33">
+     <button class="botao-compartilhar" title="Compartilhar este imóvel">
+     <i class="fas fa-share-alt"></i>
+     </button>
+     <h2>Imóvel 33</h2>
+     <div class="carousel-container">
+         <div class="carousel-track" data-imovel="33">
             <div class="carousel-slide"><img src="imagens/imagens/imovel33/foto1.jpg" alt="Imóvel 33 - Foto 1" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel33/foto2.jpg" alt="Imóvel 33 - Foto 2" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel33/foto3.jpg" alt="Imóvel 33 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -948,21 +1091,24 @@
         <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 33)">&#10094;</button>
         <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 33)">&#10095;</button>
     </div>
-    <p><strong>Valor:</strong>R$ 1.100.000,00</p>
-    <p>Rua Carlos Gomes Bairro da Luz - Duque de Caxias.</p>
-    <p>Casa ampla e arejada em terreno plano de 10x40m, com 2 quartos, sala, cozinha, banheiro, varanda e garagem com dois acessos.</p>
-    <p>Nos fundos, 5 casas alugadas geram renda imediata.</p>
-    <p>Localização estratégica, próxima ao Shopping da Pedreira e à Unigranrio.</p>
-    <p>Ideal para morar com renda ou para construtoras e incorporadoras que buscam um terreno perfeito para edificação multifamiliar.</p>
-    <p>Potencial e oportunidade no mesmo endereço!</p>
-    <p><strong>Documentação: aguardando usucapião.</strong></p>
-    <p><strong>Mais informações pelo whatsapp.</strong></p>
+        <p><strong>Valor:</strong>R$ 1.100.000,00</p>
+        <p>Rua Carlos Gomes Bairro da Luz - Duque de Caxias.</p>
+        <p>Casa ampla e arejada em terreno plano de 10x40m, com 2 quartos, sala, cozinha, banheiro, varanda e garagem com dois acessos.</p>
+        <p>Nos fundos, 5 casas alugadas geram renda imediata.</p>
+        <p>Localização estratégica, próxima ao Shopping da Pedreira e à Unigranrio.</p>
+        <p>Ideal para morar com renda ou para construtoras e incorporadoras que buscam um terreno perfeito para edificação multifamiliar.</p>
+        <p>Potencial e oportunidade no mesmo endereço!</p>
+        <p><strong>Documentação: aguardando usucapião.</strong></p>
+        <p><strong>Mais informações pelo whatsapp.</strong></p>
 </div>
 
-    <div class="property">
-    <h2>Imóvel 34</h2>
-    <div class="carousel-container">
-        <div class="carousel-track" data-imovel="34">
+<div class="property">
+     <button class="botao-compartilhar" title="Compartilhar este imóvel">
+     <i class="fas fa-share-alt"></i>
+     </button>
+     <h2>Imóvel 34</h2>
+     <div class="carousel-container">
+         <div class="carousel-track" data-imovel="34">
             <div class="carousel-slide"><img src="imagens/imagens/imovel34/foto1.jpg" alt="Imóvel 34 - Foto 1" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel34/foto2.jpg" alt="Imóvel 34 - Foto 2" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel34/foto3.jpg" alt="Imóvel 34 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -978,12 +1124,15 @@
     <p>Terreno de 400 m² com quintal. Ideal para morar e investir. </p>
     <p>Escritura de compra e venda e IPTU no nome.</p>
     <p><strong>Mais informações pelo whatsapp.</strong></p>
-    </div>
+ </div>
 
-    <div class="property">
-    <h2>Imóvel 35</h2>
-    <div class="carousel-container">
-        <div class="carousel-track" data-imovel="35">
+ <div class="property">
+      <button class="botao-compartilhar" title="Compartilhar este imóvel">
+      <i class="fas fa-share-alt"></i>
+      </button>
+     <h2>Imóvel 35</h2>
+     <div class="carousel-container">
+         <div class="carousel-track" data-imovel="35">
             <div class="carousel-slide"><img src="imagens/imagens/imovel35/foto1.jpg" alt="Imóvel 35 - Foto 1" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel35/foto2.jpg" alt="Imóvel 35 - Foto 2" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel35/foto3.jpg" alt="Imóvel 35 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -1002,9 +1151,12 @@
 </div>
 
 <div class="property">
-    <h2>Imóvel 36</h2>
-    <div class="carousel-container">
-        <div class="carousel-track" data-imovel="36">
+     <button class="botao-compartilhar" title="Compartilhar este imóvel">
+     <i class="fas fa-share-alt"></i>
+     </button>
+     <h2>Imóvel 36</h2>
+     <div class="carousel-container">
+         <div class="carousel-track" data-imovel="36">
             <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto1.jpg" alt="Imóvel 36 - Foto 1" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto2.jpg" alt="Imóvel 36 - Foto 2" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto3.jpg" alt="Imóvel 36 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -1022,9 +1174,12 @@
 </div>
 
 <div class="property">
-    <h2>Imóvel 37</h2>
-    <div class="carousel-container">
-        <div class="carousel-track" data-imovel="37">
+     <button class="botao-compartilhar" title="Compartilhar este imóvel">
+     <i class="fas fa-share-alt"></i>
+     </button>
+     <h2>Imóvel 37</h2>
+     <div class="carousel-container">
+         <div class="carousel-track" data-imovel="37">
             <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto1.png" alt="Imóvel 37 - Foto 1" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto2.png" alt="Imóvel 37 - Foto 2" onclick="abrirZoom(this)"></div>
             <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto3.png" alt="Imóvel 37 - Foto 3" onclick="abrirZoom(this)"></div>
@@ -1077,14 +1232,14 @@
             properties[i].classList.remove('active'); // Esconde todos
         }
         properties[slideIndex - 1].classList.add('active'); // Mostra o atual
-        
+       
         // IMPORTANTE: Ao trocar o imóvel, reseta o carrossel interno para o primeiro slide
         resetAllCarousels();
         moveCarousel(0, slideIndex);
     }
 
     // --- Lógica dos Carrosseis Internos (Fotos do Imóvel) ---
-    const carouselIndices = {}; 
+    const carouselIndices = {};
 
     function resetAllCarousels() {
         for (let j = 1; j <= properties.length; j++) {
@@ -1092,11 +1247,11 @@
             const track = document.querySelector(`.carousel-track[data-imovel="${j}"]`);
             if(track) {
                 // Garante que o track está na posição inicial (slide 0)
-                track.style.transform = `translateX(0%)`; 
+                track.style.transform = `translateX(0%)`;
             }
         }
     }
-    
+   
     // Inicializa o estado e a exibição do primeiro imóvel
     document.addEventListener('DOMContentLoaded', () => {
         showSlides(slideIndex);
@@ -1107,9 +1262,9 @@
     function moveCarousel(n, imovelID) {
         const track = document.querySelector(`.carousel-track[data-imovel="${imovelID}"]`);
         if (!track) return;
-        
+       
         const slides = track.querySelectorAll('.carousel-slide');
-        
+       
         // Atualiza o índice do carrossel específico
         let newIndex = (carouselIndices[imovelID] || 0) + n;
 
@@ -1122,7 +1277,7 @@
         }
 
         carouselIndices[imovelID] = newIndex; // Salva o novo índice
-        
+       
         // Aplica a translação (o movimento do carrossel)
         track.style.transform = `translateX(${-newIndex * 100}%)`;
     }
@@ -1150,10 +1305,47 @@
         }
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Seleciona TODOS os botões que têm a classe 'botao-compartilhar'
+        const botoesCompartilhar = document.querySelectorAll('.botao-compartilhar');
 
+        botoesCompartilhar.forEach(botao => {
+            botao.addEventListener('click', () => {
+                
+                // Encontra o título do imóvel para o compartilhamento
+                const propertyContainer = botao.closest('.property');
+                const titleElement = propertyContainer ? propertyContainer.querySelector('h2') : null;
+                const title = titleElement ? titleElement.textContent : 'Confira este Imóvel!';
+                
+                // Pega a URL da página atual
+                const url = window.location.href; 
+                
+                const dadosCompartilhar = {
+                    title: title,
+                    text: `${title} - Veja mais detalhes agora!`,
+                    url: url
+                };
+
+                // Lógica de Compartilhamento Nativo (para Celulares)
+                if (navigator.share) {
+                    navigator.share(dadosCompartilhar).catch(error => console.log('Compartilhamento cancelado ou erro:', error));
+                } else {
+                    // Alternativa (para Desktops): Copiar o link
+                    navigator.clipboard.writeText(dadosCompartilhar.url).then(() => {
+                        alert('Link do imóvel copiado para a área de transferência!');
+                    }).catch(err => {
+                        console.error('Não foi possível copiar o link: ', err);
+                    });
+                }
+            });
+        });
+    });
+</script>
+    
 </body>
 </html>
 
 
 
-
+  
