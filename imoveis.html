@@ -1343,24 +1343,23 @@
     });
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Pega o hash da URL (ex: #imovel2)
+    window.addEventListener("load", function() {
+        // Espera a página terminar de carregar
         const hash = window.location.hash;
-
         if (hash) {
-            // Tenta encontrar o elemento com o ID correspondente
             const element = document.querySelector(hash);
             if (element) {
-                // Rola suavemente até o elemento
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-                // Opcional: destaque temporário
-                element.style.transition = "background-color 0.5s";
-                const originalBg = element.style.backgroundColor;
-                element.style.backgroundColor = "#ffff99"; // amarelo claro
+                // Usa setTimeout para garantir que o layout esteja pronto
                 setTimeout(() => {
-                    element.style.backgroundColor = originalBg;
-                }, 1500);
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Destaque temporário
+                    element.style.transition = "background-color 0.5s";
+                    const originalBg = element.style.backgroundColor;
+                    element.style.backgroundColor = "#ffff99";
+                    setTimeout(() => {
+                        element.style.backgroundColor = originalBg;
+                    }, 1500);
+                }, 300); // 300ms é suficiente para layout terminar
             }
         }
     });
@@ -1368,6 +1367,7 @@
     
 </body>
 </html>
+
 
 
 
