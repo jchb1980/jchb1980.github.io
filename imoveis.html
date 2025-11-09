@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Imóveis Disponíveis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+    <title>Imóveis Disponíveis</title> <
+    link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css " >
+   
     <style>
         /* Estilos Globais */
         body {
             font-family: Arial, sans-serif;
-            background-color: #333;
-            margin: 0;
+            background-color: #333; margin
+            : 0;
             padding: 0;
             display: flex;
             flex-direction: column;
@@ -25,46 +25,46 @@
         .galeria {
             position: relative;
             max-width: 650px;
-            margin: 20px auto;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 5px;
+            margem: 20px automático;
+            cor de fundo: #fff;
+            sombra da caixa: 0 2px 4px rgba(0, 0, 0, 0,1);
+            preenchimento: 20px;
+            raio da borda: 5px;
         }
         .property {
-            display: none; /* Esconde todos os imóveis por padrão */
+            display: nenhum; /* Esconde todos os imóveis por padrão */
         }
         .property.active {
             display: block; /* Mostra apenas o imóvel ativo */
         }
         .property h2 {
             color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-            text-align: center;
+            tamanho da fonte: 24px;
+            margem inferior: 10px;
+            borda inferior: 2px sólido #007bff;
+            preenchimento inferior: 5px;
+            alinhamento de texto: centro;
         }
         .property p {
-            color: #555;
-            font-size: 16px;
-            margin-bottom: 5px;
-            line-height: 1.5;
+            cor: #555;
+            tamanho da fonte: 16px;
+            margem inferior: 5px;
+            altura da linha: 1,5;
         }
 
         /* --- Estilos do Carrossel (Substitui .image-grid) --- */
 
         .carousel-container {
-            position: relative;
-            overflow: hidden; /* Oculta as imagens fora da vista */
+            posição: relativo;
+            estouro: oculto; /* Oculta as imagens fora da vista */
             margin-bottom: 15px;
         }
         .carousel-track {
             display: flex; /* Coloca as imagens lado a lado */
-            transition: transform 0.5s ease-in-out;
+            transição: transform 0.5s easy-in-out;
         }
         .carousel-slide {
-            min-width: 100%; /* Cada slide ocupa 100% da largura do contêiner */
+            largura mínima: 100%; /* Cada slide ocupa 100% da largura do contêiner */
             box-sizing: border-box;
             cursor: pointer; /* Indica que a imagem é clicável */
         }
@@ -143,9 +143,9 @@
         .close-button:hover,
         .close-button:focus {
             color: #bbb;
-            text-decoration: none;
+            decoração de texto: nenhuma;
         }
-        
+       
 
        
 
@@ -153,35 +153,35 @@
         /* --- NOVO ESTILO: Botões de Navegação da Galeria de Imóveis (Texto e Preto) --- */
         .navigation-imoveis {
             display: flex;
-            justify-content: center;
-            width: 100%;
-            max-width: 650px;
-            margin: 10px auto;
+            justificar-conteúdo: centro;
+            largura: 100%;
+            largura máxima: 650px;
+            margem: 10px automático;
         }
 
         .prev, .next {
-           cursor: pointer;
-           display: block;
-           flex-grow: 1;
-           text-align: center;
+           cursor: ponteiro;
+           exibição: bloco;
+           crescimento flexível: 1;
+           alinhamento de texto: centro;
    
-           position: relative;
-           margin: 5px;
-           padding: 10px 20px;
+           posição: relativa;
+           margem: 5px;
+           preenchimento: 10px 20px;
    
-           color: white;
-           font-weight: bold;
-           font-size: 16px;
-           transition: 0.3s ease;
-           border-radius: 5px;
-           user-select: none;
+           cor: branco;
+           peso da fonte: negrito;
+           tamanho da fonte: 16px;
+           transição: facilidade de 0,3s;
+           raio da borda: 5px;
+           seleção de usuário: nenhum;
    
     /* COR PRETA */
            background-color: #000;
    
-           border: none;
-           text-decoration: none;
-           z-index: 10;
+           fronteira: nenhuma;
+           decoração de texto: nenhuma;
+           índice z: 10;
        }
 
        .prev:hover, .next:hover {
@@ -220,16 +220,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            text-decoration: none;
-            z-index: 1000;
+            tamanho da fonte: 30px;
+            sombra da caixa: 0 2px 6px rgba(0, 0, 0, 0.3);
+            decoração do texto: nenhuma;
+            índice z: 1000;
         }
         .contact-section {
-            background-color: #fff;
-            padding: 30px;
-            width: 100%;
-            max-width: 100%;
+            cor de fundo: #fff;
+            preenchimento: 30px;
+            largura: 100%;
+            largura máxima: 100%;
             margin: 40px auto;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -260,56 +260,56 @@
             background-color: #000;
             color: #fff;
             border: none;
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
+            preenchimento: 12px;
+            tamanho da fonte: 16px;
+            raio da borda: 5px;
+            cursor: ponteiro;
         }
-        .contact-section button:hover {
-            background-color: #0056b3;
+        botão .contact-section:hover {
+            cor de fundo: #0056b3;
         }
         .property {
-            position: relative; 
+            posição: relativo;
     /* Outros estilos de propriedade que você já tem */
         }
         .botao-compartilhar {
-            position: absolute;
-            top: 20px; /* Distância do topo do contêiner do imóvel */
-            right: 20px; /* Distância da lateral direita */
-            background: none;
-            border: none;
-            color: #e30000; /* Cor Vermelha/Laranja (ajuste a cor que preferir) */
+            position: absoluto;
+            superior: 20px; /* Distância do topo do contêiner do imóvel */
+            direita: 20px; /* Distância da lateral direita */
+            background: nenhum;
+            fronteira: nenhuma;
+            cor: #e30000; /* Cor Vermelha/Laranja (ajuste a cor que preferir) */
             font-size: 20px;
-            cursor: pointer;
-            z-index: 10; 
-            padding: 5px;
+            cursor: ponteiro;
+            índice z: 10;
+            preenchimento: 5px;
         }
-        /* 1. O contêiner pai deve ser 'relative' */
+        /* 1. O contêiner pai deve ser 'relativo' */
         .property {
-            position: relative; 
-    /* Altura definida é importante para o absolute funcionar. */
-    /* Se a altura já estiver definida por outros estilos, você pode omitir as linhas abaixo. */
+            posição: relativo;
+    /* Altura definida é importante para o funcionamento absoluto. */
+    /* Se a altura já estiver definida para outros estilos, você pode omitir as linhas abaixo. */
     /* Caso contrário, use: */
-    /* height: 100%; */
-    /* min-height: 300px; /* Exemplo de altura mínima */
+    /* altura: 100%; */
+    /* altura mínima: 300px; /* Exemplo de altura mínima */
             overflow: hidden; /* Ajuda a conter o botão */
         }
-        
+       
 
-/* 2. O botão de compartilhamento deve ser 'absolute' */
+/* 2. O botão de compartilhamento deve ser 'absoluto' */
         .botao-compartilhar {
-            position: absolute;
-            top: 20px; 
-            right: 20px; 
-            background: none;
-            border: none;
-            color: #000000; /* Cor Vermelha/Laranja (ajuste se quiser outra cor) */
-            font-size: 20px;
-            cursor: pointer;
-            z-index: 10; /* Garante que fique por cima de fotos ou texto */
+            posição: absoluta;
+            superior: 20px;
+            direita: 20px;
+            histórico: nenhum;
+            fronteira: nenhuma;
+            cor: #000000; /* Cor Vermelha/Laranja (ajuste se quiser outra cor) */
+            font-size: 25px;
+            cursor: ponteiro;
+            índice z: 10; /* Garante que fique por cima de fotos ou texto */
             padding: 5px;
         }
-        
+       
     </style>
 </head>
 <body id="topo">
@@ -317,26 +317,27 @@
 <h1>Imóveis</h1>
 
 <div class="navigation-imoveis">
-    <a class="prev" onclick="plusSlides(-1)">Anterior</a>
-    <a class="next" onclick="plusSlides(1)">Próximo</a>
+    <a class="prev" onclick="plusSlides(-1)"> Anterior</a>
+    <a class="next" onclick="plusSlides(1)"> Próximo</a>
 </div>
 
 <div class="galeria">
 
-  <div id="imovel1" class="property">
+  <div id="imovel1" class="property active">
+     
         <button class="botao-compartilhar" title="Compartilhar este imóvel">
         <i class="fas fa-share-alt"></i>
         </button>
         <h2>Imóvel 1</h2>
         <div class="carousel-container">
             <div class="carousel-track" data-imovel="1">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel1/foto1.png" alt="Imóvel 1 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel1/foto2.png" alt="Imóvel 1 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel1/foto3.png" alt="Imóvel 1 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel1/foto4.png" alt="Imóvel 1 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel1/ foto1.png" alt="Imóvel 1 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel1/ foto2.png" alt="Imóvel 1 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel1/ foto3.png" alt="Imóvel 1 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel1/ foto4.png" alt="Imóvel 1 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 1)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 1)">&#10095;</button>
+            <button class="carousel-btn carrossel-anterior" onclick="moveCarousel(-1, 1)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 1)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 300.000,00</p>
         <p>Terreno com 360m² (12x30), próximo à estação Jardim Primavera.</p>
@@ -356,112 +357,112 @@
          <h2>Imóvel 2</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="2">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel2/foto1.png" alt="Imóvel 2 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel2/foto4.png" alt="Imóvel 2 - Foto 4" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel2/foto3.png" alt="Imóvel 2 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel2/foto2.png" alt="Imóvel 2 - Foto 2" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel2/ foto1.png" alt="Imóvel 2 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel2/ foto4.png" alt="Imóvel 2 - Foto 4" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel2/ foto3.png" alt="Imóvel 2 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel2/ foto2.png" alt="Imóvel 2 - Foto 2" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 2)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 2)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 2)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 2)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 370.000,00</p>
         <p>Localização privilegiada, em frente à Unigranrio.Imóvel composto por 2 kitnets e 1 casa com suíte.</p>
         <p>Ideal para estudantes ou investidores.</p>
     </div>
 
-    <div id="imovel3" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 3</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="3">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel3/foto1.png" alt="Imóvel 3 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel3/foto2.png" alt="Imóvel 3 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel3/foto3.png" alt="Imóvel 3 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel3/foto4.png" alt="Imóvel 3 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel3/ foto1.png" alt="Imóvel 3 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel3/ foto2.png" alt="Imóvel 3 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel3/ foto3.png" alt="Imóvel 3 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel3/ foto4.png" alt="Imóvel 3 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 3)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 3)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 3)">❮</button> <
+            button class="carousel-btn carousel-next" onclick="moveCarousel(1, 3)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 380.000,00</p>
         <p>Casa com 2 quartos, quintal e garagem.</p>
         <p>Localizada em bairro tranquilo e com infraestrutura completa.</p>
     </div>
 
-    <div id="imovel4" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 4</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="4">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel4/foto1.png" alt="Imóvel 4 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel4/foto2.png" alt="Imóvel 4 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel4/foto3.png" alt="Imóvel 4 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel4/foto4.png" alt="Imóvel 4 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel4/ foto1.png" alt="Imóvel 4 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel4/ foto2.png" alt="Imóvel 4 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel4/ foto3.png" alt="Imóvel 4 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel4/ foto4.png" alt="Imóvel 4 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 4)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 4)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 4)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 4)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 650.000,00</p>
-        <p>Apartamento com 3 quartos, sendo  1 suíte, vaga de garagem e varanda gourmet.</p>
+        <p>Apartamento com 3 quartos, sendo 1 suíte, vaga de garagem e varanda gourmet.</p>
         <p>Localizado próximo ao centro.</p>
     </div>
 
-    <div id="imovel5" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 5</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="5">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel5/foto1.png" alt="Imóvel 5 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel5/foto2.png" alt="Imóvel 5 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel5/foto3.png" alt="Imóvel 5 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel5/foto4.png" alt="Imóvel 5 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel5/ foto1.png" alt="Imóvel 5 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel5/ foto2.png" alt="Imóvel 5 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel5/foto3.png" alt="Imóvel 5 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel5/ foto4.png" alt="Imóvel 5 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 5)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 5)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 5)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 5)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 500.000,00</p>
         <p>Sobrado com 4 quartos, escritório, garagem para 3 carros, área gourmet e churrasqueira.</p>
     </div>
 
-    <div id="imovel6" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 6</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="6">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel6/foto1.png" alt="Imóvel 6 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel6/foto2.png" alt="Imóvel 6 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel6/foto3.png" alt="Imóvel 6 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel6/foto4.png" alt="Imóvel 6 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel6/ foto1.png" alt="Imóvel 6 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel6/ foto2.png" alt="Imóvel 6 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel6/ foto3.png" alt="Imóvel 6 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel6/ foto4.png" alt="Imóvel 6 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 6)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 6)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 6)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 6)">❯</button>
         </div>
         <p><strong>Valor:</strong> VENDIDO </p>
         <p>Casa térrea com 3 quartos, cozinha planejada e lavanderia coberta.</p>
         <p>Localizada próxima a escolas e ao comércio.</p>
     </div>
 
-    <div id="imovel7" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 7</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="7">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel7/foto1.png" alt="Imóvel 7 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel7/foto2.png" alt="Imóvel 7 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel7/foto3.png" alt="Imóvel 7 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel7/foto5.png" alt="Imóvel 7 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel7/ foto1.png" alt="Imóvel 7 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel7/ foto2.png" alt="Imóvel 7 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel7/ foto3.png" alt="Imóvel 7 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel7/ foto5.png" alt="Imóvel 7 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 7)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 7)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 7)">❮</button>
+            <botão class="carousel-btn carousel-next" onclick="moveCarousel(1, 7)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 530.000,00</p>
         <p>Apartamento no Condomínio Amazonas – Duque de Caxias/RJ.</p>
@@ -471,23 +472,23 @@
         <p>Varanda charmosa, ideal para momentos relaxantes.</p>
         <p>Cozinha espaçosa e ventilada, com área de serviço integrada.</p>
         <p>Banheiro social confortável e funcional.</p>
-        <p>1 vaga de garagem</p>
+        <p>1 vaga de serviço garagem</p>
     </div>
 
-    <div id="imovel8" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 8</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="8">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel8/foto1.png" alt="Imóvel 8 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel8/foto2.png" alt="Imóvel 8 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel8/foto3.png" alt="Imóvel 8 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel8/foto5.png" alt="Imóvel 8 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel8/ foto1.png" alt="Imóvel 8 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel8/ foto2.png" alt="Imóvel 8 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel8/ foto3.png" alt="Imóvel 8 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel8/ foto5.png" alt="Imóvel 8 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 8)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 8)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 8)">❮</button>
+            <button class="carousel-btn carrossel-next" onclick="moveCarousel(1, 8)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 720.000,00</p>
         <p>Três casas independentes no mesmo terreno, localizadas na Rua das Acácias – Jardim Primavera:</p>
@@ -499,43 +500,43 @@
         <p><strong>Valor individual:</strong> R$ 300.000,00</p>
     </div>
 
-    <div id="imovel9" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 9</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="9">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel9/foto1.png" alt="Imóvel 9 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel9/foto2.png" alt="Imóvel 9 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel9/foto3.png" alt="Imóvel 9 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel9/foto4.png" alt="Imóvel 9 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel9/ foto1.png" alt="Imóvel 9 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel9/ foto2.png" alt="Imóvel 9 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carrossel-slide"><img src="imagens/imagens/imovel9/ foto3.png" alt="Imóvel 9 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel9/ foto4.png" alt="Imóvel 9 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 9)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 9)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 9)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 9)">❯</button>
         </div>
         <p><strong>Valor:</strong> VENDIDO </p>
-        <p>Rua Leopoldo Miguez, próximo à Av. Automóvel Clube e do Posto São Jorge.</p>
+        <p>Rua Leopoldo Miguez, próximo à Av.Automóvel Clube e do Posto São Jorge.</p>
         <p>Casa com 4 quartos (sendo 1 suíte), sala ampla com 86m², cozinha planejada, lavabo e banheiro social.</p>
         <p>Área externa com piscina, espaço gourmet e quintal com capacidade para até 8 carros.</p>
         <p>Acabamentos de alto padrão e localização excelente.</p>
         <p>Mais informações pelo whatsapp.</p>
     </div>
 
-    <div id="imovel10" class="property">
+    <div class="property">
         <button class="botao-compartilhar" title="Compartilhar este imóvel">
         <i class="fas fa-share-alt"></i>
         </button>
         <h2>Imóvel 10</h2>
         <div class="carousel-container">
             <div class="carousel-track" data-imovel="10">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel10/foto1.png" alt="Imóvel 10 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel10/foto2.png" alt="Imóvel 10 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel10/foto3.png" alt="Imóvel 10 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel10/foto4.png" alt="Imóvel 10 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel10/ foto1.png" alt="Imóvel 10 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel10/ foto2.png" alt="Imóvel 10 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel10/ foto3.png" alt="Imóvel 10 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel10/ foto4.png" alt="Imóvel 10 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 10)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 10)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 10)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 10)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 680.000,00</p>
         <p>Linda casa de 2 quartos, localizada na Vila Itamarati - Duque de Caxias.</p>
@@ -545,77 +546,77 @@
         <p>Esse imóvel tem tudo isso e muito mais!</p>
         <p><strong>Confira os destaques:</strong></p>
         <ul>
-            <li>2 quartos aconchegantes, prontos para acolher sua familia.</li>
+            <li>2 quartos aconchegantes, prontos para acolher sua família.</li>
             <li>Sala ampla com porta de blindex, perfeita para momentos especiais.</li>
             <li>Cozinha moderna, com pia em granito e revestimento até o teto.</li>
         </ul>
     </div>
 
-    <div id="imovel11" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 11</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="11">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel11/foto1.png" alt="Imóvel 11 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel11/foto2.png" alt="Imóvel 11 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel11/foto3.png" alt="Imóvel 11 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel11/foto4.png" alt="Imóvel 11 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel11/ foto1.png" alt="Imóvel 11 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel11/ foto2.png" alt="Imóvel 11 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel11/ foto3.png" alt="Imóvel 11 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel11/ foto4.png" alt="Imóvel 11 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 11)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 11)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 11)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 11)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 950.000,00</p>
         <p>Rua Lomas Valentinas, 60 -Jardim Vinte e Cinco de Agosto.</p>
         <p>Casa totalmente plana, sem escadas ou desníveis, projetada para oferecer liberdade e praticidade.</p>
         <p>São 3 quartos amplos e iluminados, além de uma sala majestosa, com impressionantes 28m².</p>
         <p>A área de serviço é espaçosa e arejada.O quintal convida a momentos de descontração, sol e liberdade.</p>
-        <p>Na frente,um jardim encantador com vasos decorativos dá um toque especial de carinho e beleza.</p>
-        <p>Localizada em bairro reservado, seguro e totalmente familiar,com vigilância 24 horas, portões de acesso controlado e guarita na entrada.</p>
-        <p><strong>Agente sua visita.</strong></p>
+        <p>Na frente, um jardim encantador com vasos decorativos dá um toque especial de carinho e beleza.</p>
+        <p>Localizado em bairro reservado, seguro e totalmente familiar, com vigilância 24 horas, fechados de acesso controlado e guarita na entrada.</p>
+        <p><strong>Agente visita.</strong></p>
     </div>
 
-    <div id="imovel12" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 12</h2>
          <div class="carousel-container">
             <div class="carousel-track" data-imovel="12">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel12/foto1.png" alt="Imóvel 12 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel12/foto2.png" alt="Imóvel 12 - Foto 4" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel12/foto3.png" alt="Imóvel 12 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel12/foto4.png" alt="Imóvel 12 - Foto 2" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel12/ foto1.png" alt="Imóvel 12 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel12/ foto2.png" alt="Imóvel 12 - Foto 4" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel12/ foto3.png" alt="Imóvel 12 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel12/ foto4.png" alt="Imóvel 12 - Foto 2" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 12)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 12)">&#10095;</button>
+            <button class="carousel-btn carrossel-prev" onclick="moveCarousel(-1, 12)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 12)">❯</button>
         </div>
         <p><strong>Valor:</strong> VENDIDO </p>
-        <p>Encante-se com esta jóia rara no condomínio Santa Mônica Residências - Rua Pedro Ludovico, 195,Barra da Tijuca.</p>
+        <p>Encante-se com esta jóia rara no condomínio Santa Mônica Residências - Rua Pedro Ludovico, 195, Barra da Tijuca.</p>
         <p>Na área externa frontal, o charme do jardim com fonte decorativa combina com a funcionalidade da cisterna de 15 mil litros.</p>
         <p>Nos fundos, o lazer é completo: piscina, churrasqueira com bancada de apoio, sauna a vapor com chuveiro, além de banheiro e chuveiro externo para maior comodidade.</p>
-        <p>No segundo pavimento, a casa oferece duas suítes confortáveis, sendo uma suíte master com closets espaçosos,  banheiro de corredor e um mezanino encantador, ideal como sala íntima ou escritório.</p>
+        <p>No segundo pavimento, a casa oferece duas suítes confortáveis, sendo uma suíte master com closets espaçosos, banheiro de corredor e um mezanino encantador, ideal como sala íntima ou escritório.</p>
         <p>O terceiro pavimento garante ainda mais privacidade, com dois quartos (um com closet), banheiro completo e uma sala íntima acolhedora, perfeita para relaxar, meditar ou criar um espaço de leitura.</p>
      </div>
 
-    <div id="imovel13" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 13</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="13">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel13/foto1.png" alt="Imóvel 13 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel13/foto2.png" alt="Imóvel 13 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel13/foto3.png" alt="Imóvel 13 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel13/foto4.png" alt="Imóvel 13 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel13/ foto1.png" alt="Imóvel 13 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel13/ foto2.png" alt="Imóvel 13 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel13/ foto3.png" alt="Imóvel 13 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel13/ foto4.png" alt="Imóvel 13 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 13)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 13)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 13)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 13)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 10.000.000,00</p>
-        <p>Imóvel amplo com quadra coberta - ideal para escolas, igrejas, clínicas, hospitais ou e...</p>
+        <p>Imóvel amplo com quadra coberta - ideal para escolas, roupas, clínicas, hospitais ou e...</p>
         <p>Prédio com 3 pavimentos estruturados,Diversas salas amplas, bem ventiladas e com iluminação natural.</p>
         <p>Muro alto com cerca de segurança e sistema básico instalado.</p>
         <p><strong>Inúmeras possibilidades de uso:</strong></p>
@@ -629,20 +630,20 @@
         <p><strong>Entre em contato e agende uma visita para conhecer de perto esse imóvel que pode ser a base do seu próximo grande projeto!</strong></p>
     </div>
 
-    <div id="imovel14" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 14</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="14">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel14/foto1.png" alt="Imóvel 14 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel14/foto2.png" alt="Imóvel 14 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel14/foto3.png" alt="Imóvel 14 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel14/foto4.png" alt="Imóvel 14 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel14/ foto1.png" alt="Imóvel 14 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel14/ foto2.png" alt="Imóvel 14 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel14/ foto3.png" alt="Imóvel 14 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel14/ foto4.png" alt="Imóvel 14 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 14)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 14)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 14)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 14)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 2.500.000,00</p>
         <p><strong>Galpão Comercial à Venda em Duque de Caxias - esquina estratégica com grande potencial!</strong></p>
@@ -652,88 +653,88 @@
         <p><strong>Agende uma visita.</strong></p>
     </div>
 
-    <div id="imovel15" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 15</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="15">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel15/foto1.png" alt="Imóvel 15 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel15/foto2.png" alt="Imóvel 15 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel15/foto3.png" alt="Imóvel 15 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel15/foto4.png" alt="Imóvel 15 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel15/ foto1.png" alt="Imóvel 15 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel15/ foto2.png" alt="Imóvel 15 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel15/ foto3.png" alt="Imóvel 15 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel15/ foto4.png" alt="Imóvel 15 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 15)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 15)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 15)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 15)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 700.000,00</p>
-        <p>Lindo imóvel de 5 quartos, localizado na Rua João Teles - Parque Centenário.</p>
+        <p>Lindo imóvel de 5 quartos, localizada na Rua João Teles - Parque Centenário.</p>
         <p>Mansão histórica e imponente em Duque de Caxias - antiga residência do ex-prefeito Juberlan de Oliveira.</p>
         <p>Oportunidade única de adquirir uma mansão de alto padrão, com valor histórico, localizada em uma das regiões mais tradicionais da cidade.</p>
         <p>Este imóvel foi residência do ex-prefeito Juberlan de Oliveira, que governou o município entre 1986 e 1988, marcando um período importante na história política local.</p>
-        <p>Com projeto arquitetônico diferenciado e ambientes amplos, a propriedade oferece muito conforto e exclusividade.</p>
+        <p>Com projeto diferenciado e ambientes amplos, a propriedade oferece muito conforto e exclusividade.</p>
     </div>
 
-    <div id="imovel16" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 16</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="16">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto1.png" alt="Imóvel 16 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto2.png" alt="Imóvel 16 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto3.png" alt="Imóvel 16 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto4.png" alt="Imóvel 16 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel16/ foto1.png" alt="Imóvel 16 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel16/ foto2.png" alt="Imóvel 16 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel16/foto3.png" alt="Imóvel 16 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel16/ foto4.png" alt="Imóvel 16 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 16)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 16)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 16)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 16)">❯</button>
         </div>
         <p><strong>Valor:</strong> VENDIDO </p>
         <p>Seu novo lar no Jardim 25 de Agosto - Duque de Caxias.</p>
-        <p>Casa espaçosa na Rua Marcílio Dias, próximo da Praça da Maçonaria e do Hospital Mário Lioni.</p>
+        <p>Casa espaçoso na Rua Marcílio Dias, próximo à Praça da Maçonaria e do Hospital Mário Lioni.</p>
         <p>São 3 quartos, sendo 1 suíte com closet e banheira.</p>
         <p>Sala ampla, cozinha grande, terraço gourmet para 120 pessoas.</p>
         <p>Conta ainda com 2 vagas de garagem, muito potencial e excelente localização!</p>
     </div>
 
-    <div id="imovel17" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 17</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="17">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel17/foto1.png" alt="Imóvel 17 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel17/foto2.png" alt="Imóvel 17 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel17/foto3.png" alt="Imóvel 17 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel17/foto4.png" alt="Imóvel 17 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel17/ foto1.png" alt="Imóvel 17 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel17/ foto2.png" alt="Imóvel 17 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel17/ foto3.png" alt="Imóvel 17 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel17/ foto4.png" alt="Imóvel 17 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 17)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 17)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1,17)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 17)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 1.000.000,00</p>
-        <p>Oportunidade na Rua General Mitre-740, atrás do Caxias D’Or e ao lado do HSCOR!</p>
+        <p>Oportunidade na Rua General Mitre-740, atrás do Caxias D'Or e ao lado do HSCOR!</p>
         <p>Casa com 3 quartos, 2 salas, terraço, quintal, cisterna de 19 mil litros e garagem para 3 carros.</p>
-        <p>Terreno com 360m². Casa nos fundos ideal para aluguel ou escritório.</p>
+        <p>Terreno com 360m²Casa nos fundos ideal para aluguel ou escritório.</p>
         <p><strong>Precisa de reforma.</strong></p>
     </div>
 
-    <div id="imovel18" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 18</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="18">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel18/foto4.png" alt="Imóvel 18 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel18/foto3.png" alt="Imóvel 18 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel18/foto2.png" alt="Imóvel 18 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel18/foto1.png" alt="Imóvel 18 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel18/ foto4.png" alt="Imóvel 18 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel18/ foto3.png" alt="Imóvel 18 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel18/ foto2.png" alt="Imóvel 18 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel18/ foto1.png" alt="Imóvel 18 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 18)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 18)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 18)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 18)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 900.000,00</p>
         <p>Terreno de 500m² na Vila Itamaraty, próximo ao SASE e ao Centro de Caxias.</p>
@@ -743,51 +744,51 @@
         <p>Agende sua visita!</p>
     </div>
 
-    <div id="imovel19" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 19</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="19">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto1.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto2.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto3.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto4.png" alt="Imóvel 19 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto5.png" alt="Imóvel 19 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto6.png" alt="Imóvel 19 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel19/ foto1.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel19/ foto2.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel19/ foto3.png" alt="Imóvel 19 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel19/foto4.png" alt="Imóvel 19 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel19/ foto5.png" alt="Imóvel 19 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel19/ foto6.png" alt="Imóvel 19 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 19)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 19)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 19)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 19)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 900.000,00</p>
         <p>Duque de Caxias - Jardim Vinte e Cinco de Agosto.</p>
         <p>Imóvel muito bem localizado,em bairro nobre, rua tranquila e arborizada.</p>
         <p>Composto por 2 quartos, sendo 1 suíte com closet.</p>
-        <p>Dependência completa de empregada no terraço.</p>
+        <p>Dependência completa de suíte no terraço.</p>
         <p>Sala ampla, cozinha espaçosa com armários planejados e coifa.</p>
         <p>Banheiro social com blindex, 3 vagas de garagem, piscina e terraço coberto com área gourmet.</p>
-        <p>Possui sistema de energia fotovoltaica. Ambiente com sala, suíte e cozinha projetados por arquitetos.</p>
+        <p>Possui sistema de energia fotovoltaica. Ambiente com sala, suíte e cozinha por arquitetos.</p>
         <p>Incluso todos os embutidos,Documentação cristalina.</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel20" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 20</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="20">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto4.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto2.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto3.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto6.png" alt="Imóvel 20 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto5.png" alt="Imóvel 20 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel20/foto1.png" alt="Imóvel 20 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel20/ foto4.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel20/ foto2.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel20/ foto3.png" alt="Imóvel 20 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel20/ foto6.png" alt="Imóvel 20 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel20/ foto5.png" alt="Imóvel 20 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel20/ foto1.png" alt="Imóvel 20 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 20)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 20)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 20)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 20)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 200.000,00</p>
         <p>Bairro Marechal Deodoro - Duque de Caxias.</p>
@@ -795,54 +796,54 @@
         <p>Condomínio com infraestrutura de lazer: clube,sauna, piscina, elevadores.</p>
         <p><strong>Condomínio: R$ 800,00</strong></p>
         <p><strong>IPTU: R$ 1.100,00 por ano.</strong></p>
-        <p>Próximo a INSS, Caixa, faculdades e estação.</p>
+        <p>Próximo ao INSS, Caixa, faculdades e estação.</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel21" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 21</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="21">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto1.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto2.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto3.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto4.png" alt="Imóvel 21 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto5.png" alt="Imóvel 21 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel21/foto6.png" alt="Imóvel 21 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel21/ foto1.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel21/ foto2.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel21/ foto3.png" alt="Imóvel 21 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel21/ foto4.png" alt="Imóvel 21 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel21/ foto5.png" alt="Imóvel 21 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel21/ foto6.png" alt="Imóvel 21 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 21)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 21)">&#10095;</button>
-        </div>
-        <p><strong>Valor:</strong> R$ 350.000,00</p>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 21)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 21)">❯</button> </div>
+        <p>
+        <strong>Valor:</strong> R$ 350.000,00</p>
         <p>Rua Barbosa Rodrigues,Duque de Caxias.</p>
         <p>Imóvel espaçoso e sofisticado, ideal para quem busca conforto e tranquilidade.</p>
         <p>Ambientes amplos e bem iluminados, com piso laminado e acabamento de qualidade.</p>
-        <p>Cozinha planejada, área de serviço funcional e escadas em granito.</p>
-        <p>Quartos amplos, incluindo um suíte no andar térreo; outros quartos no segundo andar com varanda e vista panorâmica</p>
+        <p>Cozinha equipada, área de serviço funcional e escadas em granito.</p>
+        <p>Quartos amplos, incluindo uma suíte no andar térreo; outros quartos no segundo andar com varanda e vista panorâmica</p>
         <p>Acabamento moderno com armários planejados, janelas de blindex e ar-condicionado.</p>
         <p>Situado em rua tranquila, com duas casas no terreno, oferecendo exclusividade e segurança.</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel22" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 22</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="22">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto1.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto2.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto3.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto4.png" alt="Imóvel 22 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto5.png" alt="Imóvel 22 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel22/foto6.png" alt="Imóvel 22 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel22/ foto1.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel22/ foto2.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel22/ foto3.png" alt="Imóvel 22 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel22/ foto4.png" alt="Imóvel 22 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel22/ foto5.png" alt="Imóvel 22 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel22/ foto6.png" alt="Imóvel 22 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 22)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 22)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 22)">❮</button> <
+            button class="carousel-btn carousel-next" onclick="moveCarousel(1, 22)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 250.000,00</p>
         <p>Rua Doutor Manoel Telles .</p>
@@ -852,66 +853,66 @@
         <p>Condomínio com portaria 24h, lazer completo e áreas comuns revitalizadas.</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
-    
-    <div id="imovel23" class="property">
+
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 23</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="23">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel23/foto1.png" alt="Imóvel 23 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel23/foto2.png" alt="Imóvel 23 - Foto 4" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel23/foto3.png" alt="Imóvel 23 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel23/foto4.png" alt="Imóvel 23 - Foto 2" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel23/ foto1.png" alt="Imóvel 23 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel23/ foto2.png" alt="Imóvel 23 - Foto 4" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel23/ foto3.png" alt="Imóvel 23 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel23/ foto4.png" alt="Imóvel 23 - Foto 2" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 23)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 23)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 23)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 23)">❯</button>
         </div>
         <p><strong>Valor:</strong> R$ 990.000,00</p>
         <p>Prédio de 2 andares na Rua Piauí, nº 30, localizado no Centro de Caxias.</p>
-        <p>Possui duas lojas (70m² e 54m²) no térreo e um amplo apartamento de 135m² com 3 quartos, sala, cozinha, hall, banheiro e área de serviço. </p>
+        <p>Possui duas lojas (70m² e 54m²) no térreo e um amplo apartamento de 135m² com 3 quartos, sala, cozinha, hall, banheiro e área de serviço </p>
         <p>Nos fundos, terreno plano de 250m² com árvores frutíferas, ideal para construir ou ampliar.</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel24" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 24</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="24">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel24/foto1.png" alt="Imóvel 24 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel24/foto2.png" alt="Imóvel 24 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel24/foto3.png" alt="Imóvel 24 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel24/foto4.png" alt="Imóvel 24 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel24/ foto1.png" alt="Imóvel 24 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel24/ foto2.png" alt="Imóvel 24 - Foto 2" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel24/ foto3.png" alt="Imóvel 24 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel24/ foto4.png" alt="Imóvel 24 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 24)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 24)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 24)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 24)">❯</button>
         </div>
         <p><strong>Valor:</strong> VENDIDO </p>
         <p>Rua Barbosa Rodrigues, nº 33, Parque Duque - Duque de Caxias.</p>
-        <p>Casa ampla com 3 quartos, sala com espelho d’água sob a escada, cozinha espaçosa.</p>
+        <p>Casa ampla com 3 quartos, sala com espelho d'água sob a escada, cozinha espaçosa.</p>
         <p>Quintal com árvores frutíferas (coco, seriguela), garagem para 4 carros e kitnet nos fundos.</p>
-        <p>Obras inacabadas — perfeita para personalizar e transformar no seu lar!</p>
+        <p>Obras inacabadas — perfeitas para personalizar e transformar no seu lar!</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel25" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 25</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="25">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel25/foto1.jpg" alt="Imóvel 25 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel25/foto2.jpg" alt="Imóvel 25 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel25/foto3.jpg" alt="Imóvel 25 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel25/foto4.jpg" alt="Imóvel 25 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel25/ foto1.jpg" alt="Imóvel 25 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel25/ foto2.jpg" alt="Imóvel 25 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel25/ foto3.jpg" alt="Imóvel 25 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel25/ foto4.jpg" alt="Imóvel 25 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 25)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 25)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 25)">❮</button> <
+            button class="carousel-btn carousel-next" onclick="moveCarousel(1, 25)">❯</button>
         </div>
         <p><strong>Valor:</strong>R$ 650.000,00</p>
         <p>Rua General Dionísio, junto à Praça do Humaitá- Duque de Caxias.</p>
@@ -920,108 +921,108 @@
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel26" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 26</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="26">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel26/foto4.jpg" alt="Imóvel 26 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel26/foto3.jpg" alt="Imóvel 26 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel26/foto2.jpg" alt="Imóvel 26 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel26/foto1.jpg" alt="Imóvel 26 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel26/ foto4.jpg" alt="Imóvel 26 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel26/ foto3.jpg" alt="Imóvel 26 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel26/ foto2.jpg" alt="Imóvel 26 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel26/ foto1.jpg" alt="Imóvel 26 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 26)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 26)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 26)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 26)">❯</button>
         </div>
-        <p><strong>Valor:</strong>R$10.000.000,00</p>
-        <p>Início da Brigadeiro Lima e Silva, perto da Washington Luiz e da Polícia Técnica de Caxias.</p>
-        <p>Prédio de 5 andaes em um Terreno de 360 m².</p>
+        <p><strong>Valor:</strong>R$ 10.000.000,00</p>
+        <p>Início da Brigadeiro Lima e Silva, perto de Washington Luiz e da Polícia Técnica de Caxias.</p>
+        <p>Prédio de 5 andares em um Terreno de 360 ​​m².</p>
         <p>Fachada em pastilha e granito, elevador preparado.</p>
         <p>Falta acabamento interno. Localização valorizada e estratégica!</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel27" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 27</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="27">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel27/foto1.jpg" alt="Imóvel 27 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel27/foto2.jpg" alt="Imóvel 27 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel27/foto3.jpg" alt="Imóvel 27 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel27/foto4.jpg" alt="Imóvel 27 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel27/ foto1.jpg" alt="Imóvel 27 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel27/ foto2.jpg" alt="Imóvel 27 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel27/ foto3.jpg" alt="Imóvel 27 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel27/ foto4.jpg" alt="Imóvel 27 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 27)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 27)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 27)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 27)">❯</button>
         </div>
         <p><strong>Valor:</strong>R$ 2.500.000,00</p>
-        <p>Localizado na esquina da Ampliato Cabral com a Rua General Câmara em Caxias.</p>
+        <p>Localizado na esquina do Ampliato Cabral com a Rua General Câmara em Caxias.</p>
         <p>Galpão 12x30, todo murado, com cobertura e portão de garagem.</p>
         <p>Atualmente funciona como estacionamento , excelente ponto comercial, ideal para qualquer atividade.</p>
     </div>
    
-    <div id="imovel28" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 28</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="28">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel28/foto1.jpg" alt="Imóvel 28 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel28/foto2.jpg" alt="Imóvel 28 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel28/foto3.jpg" alt="Imóvel 28 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel28/foto4.jpg" alt="Imóvel 28 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel28/ foto1.jpg" alt="Imóvel 28 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel28/ foto2.jpg" alt="Imóvel 28 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel28/ foto3.jpg" alt="Imóvel 28 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel28/ foto4.jpg" alt="Imóvel 28 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 28)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 28)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1,28)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 28)">❯</button>
         </div>
         <p><strong>Valor:</strong>R$ 2.200.000,00</p>
-        <p>Rua Ampliato Cabral com Rua Marcílio Dias, perto do Mário Leone e da Praça da Marçonaria , em Caxias.</p>
+        <p>Rua Ampliato Cabral com Rua Marcílio Dias, perto do Mário Leone e da Praça da Marçonaria, em Caxias.</p>
         <p>Casa imponente de esquina, com 7 quartos, 2 salas, 2 banheiros sociais, terraço, jardim com palmeiras.</p>
-        <p>Dependência e garagem para 5 carros. Ideal pra morar ou investir!</p>
+        <p>Dependência e garagem para 5 carros.</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel29" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 29</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="29">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel29/foto1.jpg" alt="Imóvel 29 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel29/foto2.jpg" alt="Imóvel 29 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel29/foto3.jpg" alt="Imóvel 29 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel29/foto4.jpg" alt="Imóvel 29 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel29/ foto1.jpg" alt="Imóvel 29 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel29/ foto2.jpg" alt="Imóvel 29 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel29/ foto3.jpg" alt="Imóvel 29 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel29/ foto4.jpg" alt="Imóvel 29 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 29)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 29)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 29)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 29)">❯</button>
         </div>
         <p><strong>Valor:</strong>R$ 250.000,00</p>
-        <p>Rua Ana Porto, a passos da Nilo Peçanha e da Igreja Universal , no centro de Caxias.</p>
+        <p>Rua Ana Porto, a passos de Nilo Peçanha e da Igreja Universal, no centro de Caxias.</p>
         <p>São duas casas com 2 quartos cada, podendo virar 4 unidades ou ser unificada. Ideal para morar ou investir.</p>
         <p>Localização estratégica e com grande potencial!</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel30" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 30</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="30">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto1.jpg" alt="Imóvel 30 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto2.jpg" alt="Imóvel 30 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto3.jpg" alt="Imóvel 30 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto4.jpg" alt="Imóvel 30 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel30/ foto1.jpg" alt="Imóvel 30 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel30/ foto2.jpg" alt="Imóvel 30 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel30/ foto3.jpg" alt="Imóvel 30 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel30/foto4.jpg" alt="Imóvel 30 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 30)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 30)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 30)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 30)">❯</button>
         </div>
         <p><strong>Valor:</strong>R$ 670.000,00</p>
         <p>Rua Ana Porto , casa a 30m da Av. Nilo Peçanha!</p>
@@ -1031,65 +1032,65 @@
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel31" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 31</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="31">
-                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto1.jpg" alt="Imóvel 31 - Foto 1" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto2.jpg" alt="Imóvel 31 - Foto 2" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto3.jpg" alt="Imóvel 31 - Foto 3" onclick="abrirZoom(this)"></div>
-                <div class="carousel-slide"><img src="imagens/imagens/imovel31/foto4.jpg" alt="Imóvel 31 - Foto 4" onclick="abrirZoom(this)"></div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/ foto1.jpg" alt="Imóvel 31 - Foto 1" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/ foto2.jpg" alt="Imóvel 31 - Foto 2" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/ foto3.jpg" alt="Imóvel 31 - Foto 3" onclick="abrirZoom(this)"></ div>
+                <div class="carousel-slide"><img src="imagens/imagens/imovel31/ foto4.jpg" alt="Imóvel 31 - Foto 4" onclick="abrirZoom(this)"></ div>
             </div>
-            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 31)">&#10094;</button>
-            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 31)">&#10095;</button>
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 31)">❮</button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 31)">❯</button>
         </div>
         <p><strong>Valor:</strong>R$ 700.000,00</p>
-        <p>Localizada na Rua General Dionísio, a poucos passos da Praça Humaitá e da Brigadeiro Lima e Silva.</p>
+        <p>Localizada na Rua General Dionísio, a poucos passos da Praça Humaitá e do Brigadeiro Lima e Silva.</p>
         <p>Casa com 3 quartos, sala, cozinha e banheiro amplos, dependência completa e quintal gigante.</p>
         <p>Acessibilidade total para todas as regiões de Duque de Caxias.</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
     </div>
 
-    <div id="imovel32" class="property">
+    <div class="property">
          <button class="botao-compartilhar" title="Compartilhar este imóvel">
          <i class="fas fa-share-alt"></i>
          </button>
          <h2>Imóvel 32</h2>
          <div class="carousel-container">
              <div class="carousel-track" data-imovel="32">
-             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto1.jpg" alt="Imóvel 32 - Foto 1" onclick="abrirZoom(this)"></div>
-             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto2.jpg" alt="Imóvel 32 - Foto 2" onclick="abrirZoom(this)"></div>
-             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto3.jpg" alt="Imóvel 32 - Foto 3" onclick="abrirZoom(this)"></div>
-             <div class="carousel-slide"><img src="imagens/imagens/imovel32/foto4.jpg" alt="Imóvel 32 - Foto 4" onclick="abrirZoom(this)"></div>
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/ foto1.jpg" alt="Imóvel 32 - Foto 1" onclick="abrirZoom(this)"></ div>
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/ foto2.jpg" alt="Imóvel 32 - Foto 2" onclick="abrirZoom(this)"></ div>
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/ foto3.jpg" alt="Imóvel 32 - Foto 3" onclick="abrirZoom(this)"></ div>
+             <div class="carousel-slide"><img src="imagens/imagens/imovel32/ foto4.jpg" alt="Imóvel 32 - Foto 4" onclick="abrirZoom(this)"></ div>
          </div>
-         <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 32)">&#10094;</button>
-         <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 32)">&#10095;</button>
+         <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 32)">❮</button>
+         <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 32)">❯</button>
     </div>
         <p><strong>Valor:</strong> VENDIDO </p>
         <p>Condomínio Amazonas, Rua Sebastião de Carvalho.</p>
         <p>Apartamento no 13º andar com vista livre para o Galeão, Igreja da Penha e Hospital Caxias D’Or. </p>
-        <p>Dois quartos (1 suíte), sala, cozinha ampla e ventilada, varandão e 1 vaga de garagem.</p>
+        <p>Dois quartos (1 suíte), sala, cozinha ampla e ventilada, varanda e 1 vaga de garagem.</p>
         <p>Conforto, localização e paisagens únicas!</p>
         <p><strong>Mais informações pelo whatsapp.</strong></p>
 </div>
 
-<div id="imovel33" class="property">
+<div class="property">
      <button class="botao-compartilhar" title="Compartilhar este imóvel">
      <i class="fas fa-share-alt"></i>
      </button>
      <h2>Imóvel 33</h2>
      <div class="carousel-container">
          <div class="carousel-track" data-imovel="33">
-            <div class="carousel-slide"><img src="imagens/imagens/imovel33/foto1.jpg" alt="Imóvel 33 - Foto 1" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel33/foto2.jpg" alt="Imóvel 33 - Foto 2" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel33/foto3.jpg" alt="Imóvel 33 - Foto 3" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel33/foto4.jpg" alt="Imóvel 33 - Foto 4" onclick="abrirZoom(this)"></div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel33/ foto1.jpg" alt="Imóvel 33 - Foto 1" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel33/ foto2.jpg" alt="Imóvel 33 - Foto 2" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel33/ foto3.jpg" alt="Imóvel 33 - Foto 3" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel33/ foto4.jpg" alt="Imóvel 33 - Foto 4" onclick="abrirZoom(this)"></ div>
         </div>
-        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 33)">&#10094;</button>
-        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 33)">&#10095;</button>
+        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 33)">❮</button> <
+        button class="carousel-btn carousel-next" onclick="moveCarousel(1, 33)">❯</button>
     </div>
         <p><strong>Valor:</strong>R$ 1.100.000,00</p>
         <p>Rua Carlos Gomes Bairro da Luz - Duque de Caxias.</p>
@@ -1102,97 +1103,97 @@
         <p><strong>Mais informações pelo whatsapp.</strong></p>
 </div>
 
-<div id="imovel34" class="property">
+<div class="property">
      <button class="botao-compartilhar" title="Compartilhar este imóvel">
      <i class="fas fa-share-alt"></i>
      </button>
      <h2>Imóvel 34</h2>
      <div class="carousel-container">
          <div class="carousel-track" data-imovel="34">
-            <div class="carousel-slide"><img src="imagens/imagens/imovel34/foto1.jpg" alt="Imóvel 34 - Foto 1" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel34/foto2.jpg" alt="Imóvel 34 - Foto 2" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel34/foto3.jpg" alt="Imóvel 34 - Foto 3" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel34/foto4.jpg" alt="Imóvel 34 - Foto 4" onclick="abrirZoom(this)"></div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel34/ foto1.jpg" alt="Imóvel 34 - Foto 1" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel34/ foto2.jpg" alt="Imóvel 34 - Foto 2" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel34/ foto3.jpg" alt="Imóvel 34 - Foto 3" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel34/ foto4.jpg" alt="Imóvel 34 - Foto 4" onclick="abrirZoom(this)"></ div>
         </div>
-        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 34)">&#10094;</button>
-        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 34)">&#10095;</button>
+        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1,34)">❮</button>
+        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 34)">❯</button>
     </div>
     <p><strong>Valor:</strong>R$ 480.000,00</p>
     <p>Rua Pardal Malet - Duque de Caxias.</p>
-    <p>Amplo imóvel no Parque Lafayette, com casa principal de 2 quartos, varandões, garagem e cômodos arejados.</p>
+    <p>Amplo imóvel no Parque Lafayette, com casa principal de 2 quartos, varandas, garagem e cômodos arejados.</p>
     <p>Conta com uma casa no segundo pavimento e três no subsolo (duas inacabadas).</p>
-    <p>Terreno de 400 m² com quintal. Ideal para morar e investir. </p>
-    <p>Escritura de compra e venda e IPTU no nome.</p>
+    <p>Terreno de 400 m² com quintal </p>
+    <p>Escritura de compra e venda e IPTU sem nome.</p>.
     <p><strong>Mais informações pelo whatsapp.</strong></p>
  </div>
 
- <div id="imovel35" class="property">
+ <div class="property">
       <button class="botao-compartilhar" title="Compartilhar este imóvel">
       <i class="fas fa-share-alt"></i>
       </button>
      <h2>Imóvel 35</h2>
      <div class="carousel-container">
          <div class="carousel-track" data-imovel="35">
-            <div class="carousel-slide"><img src="imagens/imagens/imovel35/foto1.jpg" alt="Imóvel 35 - Foto 1" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel35/foto2.jpg" alt="Imóvel 35 - Foto 2" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel35/foto3.jpg" alt="Imóvel 35 - Foto 3" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel35/foto4.jpg" alt="Imóvel 35 - Foto 4" onclick="abrirZoom(this)"></div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel35/ foto1.jpg" alt="Imóvel 35 - Foto 1" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel35/ foto2.jpg" alt="Imóvel 35 - Foto 2" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel35/ foto3.jpg" alt="Imóvel 35 - Foto 3" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel35/ foto4.jpg" alt="Imóvel 35 - Foto 4" onclick="abrirZoom(this)"></ div>
         </div>
-        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 35)">&#10094;</button>
-        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 35)">&#10095;</button>
+        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 35)">❮</button>
+        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 35)">❯</button>
     </div>
     <p><strong>Valor:</strong>R$ 500.000,00</p>
     <p>Rua Mariz e Barros.</p>
-    <p>Apartamento amplo de 126m²  São 3 quartos, sala com piso de madeira.</p>
+    <p>Apartamento amplo de 126m² São 3 quartos, sala com piso de madeira.</p>
     <p>Quartos em laminado, cozinha revestida em cerâmica, banheiro e teto rebaixado.</p>
     <p>Precisa apenas de pintura.</p>
     <p>Localização privilegiada, perto da Praça do Humaitá e Carrefour.</p>
     <p><strong>Mais informações pelo whatsapp.</strong></p>
 </div>
 
-<div id="imovel36" class="property">
+<div class="property">
      <button class="botao-compartilhar" title="Compartilhar este imóvel">
      <i class="fas fa-share-alt"></i>
      </button>
      <h2>Imóvel 36</h2>
      <div class="carousel-container">
          <div class="carousel-track" data-imovel="36">
-            <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto1.jpg" alt="Imóvel 36 - Foto 1" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto2.jpg" alt="Imóvel 36 - Foto 2" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto3.jpg" alt="Imóvel 36 - Foto 3" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto4.jpg" alt="Imóvel 36 - Foto 4" onclick="abrirZoom(this)"></div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel36/ foto1.jpg" alt="Imóvel 36 - Foto 1" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel36/ foto2.jpg" alt="Imóvel 36 - Foto 2" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel36/ foto3.jpg" alt="Imóvel 36 - Foto 3" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel36/foto4.jpg" alt="Imóvel 36 - Foto 4" onclick="abrirZoom(this)"></ div>
         </div>
-        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 36)">&#10094;</button>
-        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 36)">&#10095;</button>
+        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 36)">❮</button>
+        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 36)">❯</button>
     </div>
     <p><strong>Valor:</strong>R$ 650.000,00</p>
     <p>Localizado na Rua Bahia - 151 , em ponto estratégico, perto de tudo.</p>
-    <p>Amplo apartamento com 3 quartos, sendo 1 suíte, dependência completa de empregada, sala generosa e varandão com vista livre.</p>
+    <p>Amplo apartamento com 3 quartos, sendo 1 suíte, dependência completa de empregada, sala generosa e varanda com vista livre.</p>
     <p>Condomínio com lazer completo, ideal para toda a família.</p>
-    <p>Documentação em dia e aceita financiamento bancário.</p>
+    <p>Documentação em dia e aceitação de financiamento bancário.</p>
     <p><strong>Mais informações pelo whatsapp.</strong></p>
 </div>
 
-<div id="imovel37" class="property">
+<div class="property">
      <button class="botao-compartilhar" title="Compartilhar este imóvel">
      <i class="fas fa-share-alt"></i>
      </button>
      <h2>Imóvel 37</h2>
      <div class="carousel-container">
          <div class="carousel-track" data-imovel="37">
-            <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto1.png" alt="Imóvel 37 - Foto 1" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto2.png" alt="Imóvel 37 - Foto 2" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto3.png" alt="Imóvel 37 - Foto 3" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto4.png" alt="Imóvel 37 - Foto 4" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto5.png" alt="Imóvel 37 - Foto 5" onclick="abrirZoom(this)"></div>
-            <div class="carousel-slide"><img src="imagens/imagens/imovel37/foto6.png" alt="Imóvel 37 - Foto 6" onclick="abrirZoom(this)"></div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel37/ foto1.png" alt="Imóvel 37 - Foto 1" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel37/ foto2.png" alt="Imóvel 37 - Foto 2" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel37/ foto3.png" alt="Imóvel 37 - Foto 3" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel37/ foto4.png" alt="Imóvel 37 - Foto 4" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel37/ foto5.png" alt="Imóvel 37 - Foto 5" onclick="abrirZoom(this)"></ div>
+            <div class="carousel-slide"><img src="imagens/imagens/imovel37/ foto6.png" alt="Imóvel 37 - Foto 6" onclick="abrirZoom(this)"></ div>
         </div>
-        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 37)">&#10094;</button>
-        <button class="carousel-btn carousel-next" onclick="moveCarousel(1, 37)">&#10095;</button>
+        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1, 37)">❮</button> <
+        button class="carousel-btn carousel-next" onclick="moveCarousel(1, 37)">❯</button>
     </div>
     <p><strong>Valor:</strong>R$ 950.000,00</p>
     <p>Rua Cardoso Bessa , 390 - Jardim 25 de Agosto- Duque de Caxias.</p>
-    <p>Casa duplex com 3 quartos (2 suítes), salas amplas, cozinha com dispensa e terraço coberto versátil.</p>
+    <p>Casa duplex com 3 quartos (2 suítes), salas amplas, cozinha com dispensa e terraço ensolarado.</p>
     <p>Varanda acolhedora, 2 vagas e cisterna de 12 mil litros.</p>
     <p>Estrutura sólida, cheia de possibilidades para se tornar o lar dos seus sonhos.</p>
     <p><strong>Mais informações pelo whatsapp.</strong></p>
@@ -1202,24 +1203,24 @@
 
 <div class="navigation-links">
     <a class="button" href="index.html">Voltar</a>
-    <a class="button" href="contato.html">Avançar</a>
+    <a class="button" href="contato.html">Avançar</ a>
 </div>
 
-<a class="whatsapp-button" href="https://wa.me/5521965202500?text=Ol%C3%A1%20%E2%98%BA%2C%20vim%20atrav%C3%A9s%20do%20site%20imobili%C3%A1rio." target="_blank" title="Fale conosco no WhatsApp">
+<a class="whatsapp-button" href=" https://wa.me/ 5521965202500?text=Ol%C3%A1% 20%E2%98%BA%2C%20vim%20atrav% C3%A9s%20do%20site%20imobili% C3%A1rio ." target="_blank" title="Fale conosco no WhatsApp">
     💬
 </a>
 
 
 
 <div id="zoom-modal" class="modal" onclick="fecharZoom(event)">
-    <span class="close-button" onclick="fecharZoom(event)">&times;</span>
+    <span class="close-button" onclick="fecharZoom(event)">& times;</span>
     <img class="modal-content" id="img-zoom">
 </div>
 
 <script>
     // --- Lógica da Galeria Principal (Troca de Imóveis) ---
     let slideIndex = 1; // Controla qual imóvel está ativo
-    const properties = document.getElementsByClassName("property");
+    const properties = document. getElementsByClassName(" property");
 
     function plusSlides(n) {
         showSlides(slideIndex += n);
@@ -1229,11 +1230,11 @@
         if (n > properties.length) { slideIndex = 1 }
         if (n < 1) { slideIndex = properties.length }
         for (let i = 0; i < properties.length; i++) {
-            properties[i].classList.remove('active'); // Esconde todos
+            properties[i].classList. remover('ativo'); // Esconde todos
         }
-        properties[slideIndex - 1].classList.add('active'); // Mostra o atual
+        propriedades[slideIndex - 1].classList.add('active'); // Mostra o atual
        
-        // IMPORTANTE: Ao trocar o imóvel, reseta o carrossel interno para o primeiro slide
+        // IMPORTANTE: Ao trocar o imóvel, redefina o carrossel interno para o primeiro slide
         resetAllCarousels();
         moveCarousel(0, slideIndex);
     }
@@ -1242,28 +1243,28 @@
     const carouselIndices = {};
 
     function resetAllCarousels() {
-        for (let j = 1; j <= properties.length; j++) {
+        for (seja j = 1; j <= propriedades.length; j++) {
             carouselIndices[j] = 0;
-            const track = document.querySelector(`.carousel-track[data-imovel="${j}"]`);
+            const track = document.querySelector(` .carousel-track[data-imovel="${ j}"]`);
             if(track) {
-                // Garante que o track está na posição inicial (slide 0)
-                track.style.transform = `translateX(0%)`;
-            }
+                // Garantir que a trilha esteja na posição inicial (slide 0)
+                track.style.transformar = `traduzirX(0%)`;
+            } }
         }
-    }
+    //
    
-    // Inicializa o estado e a exibição do primeiro imóvel
-    document.addEventListener('DOMContentLoaded', () => {
+    Inicializa o estado e a exibição do primeiro imóvel
+    document.addEventListener(' DOMContentLoaded', () => {
         showSlides(slideIndex);
         resetAllCarousels();
     });
 
 
-    function moveCarousel(n, imovelID) {
-        const track = document.querySelector(`.carousel-track[data-imovel="${imovelID}"]`);
-        if (!track) return;
+    function moveCarrossel(n, imovelID) {
+        const track = document.querySelector(` .carousel-track[data-imovel="${ imovelID}"]`);
+        if (!track) retornar;
        
-        const slides = track.querySelectorAll('.carousel-slide');
+        const slides = track.querySelectorAll('. carousel-slide');
        
         // Atualiza o índice do carrossel específico
         let newIndex = (carouselIndices[imovelID] || 0) + n;
@@ -1272,55 +1273,55 @@
         if (newIndex >= slides.length) {
             newIndex = 0;
         }
-        if (newIndex < 0) {
-            newIndex = slides.length - 1;
+        if (novoÍndice <0) {
+            novoÍndice = slides.length - 1;
         }
 
-        carouselIndices[imovelID] = newIndex; // Salva o novo índice
+        carrosselIndices[imovelID] = novoIndex; // Salva o novo índice
        
-        // Aplica a translação (o movimento do carrossel)
+        // Aplica a tradução (o movimento do carrossel)
         track.style.transform = `translateX(${-newIndex * 100}%)`;
     }
 
     // --- Lógica do Modal (Zoom da Imagem) ---
-    const modal = document.getElementById("zoom-modal");
-    const modalImg = document.getElementById("img-zoom");
+    const modal = document.getElementById("zoom- modal");
+    const modalImg = document.getElementById("img- zoom");
 
     function abrirZoom(imgElement) {
-        modal.style.display = "block";
+        modal.style.display = "bloco";
         modalImg.src = imgElement.src;
     }
 
     function fecharZoom(event) {
         // Verifica se o clique foi no botão de fechar (X) ou no fundo (o modal div)
-        if (!event || event.target.id === 'zoom-modal' || event.target.classList.contains('close-button')) {
+        if (!event || event.target.id === 'zoom-modal' || event.target.classList. contains('close-button')) {
             modal.style.display = "none";
         }
     }
 
     // Adiciona o fechamento do modal ao pressionar ESC
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener(' keydown', function(e) {
         if (e.key === "Escape" && modal.style.display === "block") {
             fecharZoom();
         }
     });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener(' DOMContentLoaded', function() {
         // Seleciona TODOS os botões que têm a classe 'botao-compartilhar'
-        const botoesCompartilhar = document.querySelectorAll('.botao-compartilhar');
+        const botoesCompartilhar = document.querySelectorAll('. botao-compartilhar');
 
-        botoesCompartilhar.forEach(botao => {
-            botao.addEventListener('click', () => {
-                
+        botoesCompartilhar.forEach( botao => {
+            botao.addEventListener('click' , () => {
+               
                 // Encontra o título do imóvel para o compartilhamento
                 const propertyContainer = botao.closest('.property');
-                const titleElement = propertyContainer ? propertyContainer.querySelector('h2') : null;
-                const title = titleElement ? titleElement.textContent : 'Confira este Imóvel!';
-                
-                // Pega a URL da página atual
-                const url = window.location.href; 
-                
+                const titleElement = propertyContainer ?                 querySelector ('h2') : null;textContent : 'Confira este Imóvel!';                 // Pega a URL da página atual
+
+               
+
+                const url = janela.localização.href;
+               
                 const dadosCompartilhar = {
                     title: title,
                     text: `${title} - Veja mais detalhes agora!`,
@@ -1329,10 +1330,10 @@
 
                 // Lógica de Compartilhamento Nativo (para Celulares)
                 if (navigator.share) {
-                    navigator.share(dadosCompartilhar).catch(error => console.log('Compartilhamento cancelado ou erro:', error));
+                    navigator.share( dadosCompartilhar).catch(error => console.log('Compartilhamento cancelado ou erro:', error));
                 } else {
                     // Alternativa (para Desktops): Copiar o link
-                    navigator.clipboard.writeText(dadosCompartilhar.url).then(() => {
+                    navigator.clipboard.writeText( dadosCompartilhar.url).then(() => {
                         alert('Link do imóvel copiado para a área de transferência!');
                     }).catch(err => {
                         console.error('Não foi possível copiar o link: ', err);
@@ -1342,33 +1343,12 @@
         });
     });
 </script>
-<script>
-    window.addEventListener("load", function() {
-        // Espera a página terminar de carregar
-        const hash = window.location.hash;
-        if (hash) {
-            const element = document.querySelector(hash);
-            if (element) {
-                // Usa setTimeout para garantir que o layout esteja pronto
-                setTimeout(() => {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    // Destaque temporário
-                    element.style.transition = "background-color 0.5s";
-                    const originalBg = element.style.backgroundColor;
-                    element.style.backgroundColor = "#ffff99";
-                    setTimeout(() => {
-                        element.style.backgroundColor = originalBg;
-                    }, 1500);
-                }, 300); // 300ms é suficiente para layout terminar
-            }
-        }
-    });
-</script>
-    
+   
 </body>
 </html>
 
 
 
 
+ 
 
